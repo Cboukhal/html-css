@@ -252,7 +252,7 @@
                 elle fonctionne avec l'attribut for qui prend en parametre l'id du champ correspondant.-->
                 <input type="text" id="nom" placeholder="Dupont"><!-- input est orpheline, elle permet de realiser des champs de saisi avec differents types et attributs-->
                 <br><label for="prenom">Prenom:</label>
-                    <input type="text" id="prenom" placeholder="Jean">
+                    <input type="text" id="prenom" placeholder="Jean" required> <!-- required permet de rendre le champ obligatoire-->
                 <br><label for="mail">Mail:</label>
                     <input type="email" id="mail" placeholder="jean@gmail.com">
                 <br><label for="mdp">Mot de passe:</label>
@@ -272,7 +272,21 @@
                     Feminin<input type="radio" id="sexe" name="sexe">
                     autre<input type="radio" id="sexe" name="sexe">
                 <br><label for="pointure">Pointure:</label>
-                    <input type="range" id="pointure">
+                    <input type="range" id="pointure" min="20" max="50" step="1">
+                <br><label for="cgu">Accord:</label>
+                    <input type="checkbox" id="cgu"> En cochant cette case, vous acceptez nos <a href="">CGU</a>
+                <br><label for="formation">Formation:</label>
+                    <select name="" id="formation">
+                        <option value=""></option>
+                        <option value="">DWWM</option>
+                        <option value="" selected>CDA</option><!-- selected defini le choix par defaut-->
+                        <option value="">CDUI</option>
+                    </select>
+                <label for="message">Message :</label>
+                <textarea name="" id="message" rows="20" cols="40"></textarea>
+                <br><input type="button" value="connexion">
+                <br><button>inscription</button> <!-- ne pas utiliser dans un formulaire-->
+                <br><input type="submit" value="Envoyer"> <!-- le submit correspond a la soumission du formulaire-->
             </form>
             </main>
         <!-- la balise footer va contenir tous les elements du pied de la page -->
