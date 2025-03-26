@@ -235,7 +235,7 @@
                 </tr>
             </table>
 
-            <h2>Les balises medias</h2>
+            <h2>7.Les balises medias</h2>
             <p>Html proporse plusieurs balises media pour des images,
                  videos et audios. Toutes les balises medias sont des balises inlines.</p>
                 <img src="./medias/wow_warwithin.jpg" alt="image de wow"><!-- img fontionne avec 2 attributs src qui prends le chemin d'acces au fichier 
@@ -243,9 +243,38 @@
                 <video src="./medias/circulation.mp4" controls></video><!-- video n'est pas orpheline comme img, elle fonctionne avec src et controls pour controler la video-->
                 <audio src="./medias/generique.mp3" controls></audio>
 
-            <h2>Les balises formulaires</h2>
-            <p></p>
-        </main>
+            <h2>8.Les balises formulaires</h2>
+            <p>HTML propose du plusieurs balises  pour creer different type de formulaire, 
+                comme le formulaire d'inscription, de connexion, de contact ou de newletters ...
+                On utilise la balise form pour creer un formulaire.</p>
+            <form action="">
+                <label for="nom">Nom:</label><!-- label permet de donner une indication sur le champ de saisi, 
+                elle fonctionne avec l'attribut for qui prend en parametre l'id du champ correspondant.-->
+                <input type="text" id="nom" placeholder="Dupont"><!-- input est orpheline, elle permet de realiser des champs de saisi avec differents types et attributs-->
+                <br><label for="prenom">Prenom:</label>
+                    <input type="text" id="prenom" placeholder="Jean">
+                <br><label for="mail">Mail:</label>
+                    <input type="email" id="mail" placeholder="jean@gmail.com">
+                <br><label for="mdp">Mot de passe:</label>
+                    <input type="password" id="mdp" placeholder="****************"> <!-- password cache le mot de passe-->
+                <br><label for="tel">Telephone:</label>
+                    <input type="number" id="tel" placeholder="06 01 02 03 04">
+                <br><label for="date">Date de naissance:</label>
+                    <input type="date" name="date" id="01/01/1980">
+                <br><label for="fichier">Votre CV:</label>
+                    <input type="file" id="fichier">
+                <br><label for="couleur">Couleur prefere:</label>
+                    <input type="color" id="couleur">
+                <br><label for="site">Votre site:</label>
+                    <input type="url" id="site">
+                <br><label for="sexe">Sexe:</label>
+                    Masculin<input type="radio" id="sexe" name="sexe"> <!-- l'attribut name permet d'avoir un seul choix de radio-->
+                    Feminin<input type="radio" id="sexe" name="sexe">
+                    autre<input type="radio" id="sexe" name="sexe">
+                <br><label for="pointure">Pointure:</label>
+                    <input type="range" id="pointure">
+            </form>
+            </main>
         <!-- la balise footer va contenir tous les elements du pied de la page -->
          <footer>
 
