@@ -86,11 +86,12 @@ div{
 #alignement{
     background-color: black;
     padding: 50px;
+    display: flex; /*ceci force les blocs a s'aligner*/
+    justify-content: space-evenly;
 }
 
 #alignement li{
     width: 20%;
     background-color: gray;
     height: 100px;
-    margin-bottom: 10px;
 }
