@@ -52,6 +52,8 @@ div{
 #test{
     font-size: 2em; /*Pour ajuster la taille de la typographie 1em=16px*/
     font-family: 'Courier New', Courier, monospace; /*Pour changer la typo */
-    font-weight: bold; /*pour appliquer la typo*/
+    font-weight: bold; /*pour manipuler la largeur de la typo*/
+    font-style: italic;/*pour changer le style */
     text-align: left;
+    text-transform: uppercase; /*pour transformer le texte maj, min, capital...*/
 }
