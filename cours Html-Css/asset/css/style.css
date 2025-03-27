@@ -84,7 +84,7 @@ div{
 
 /*propriete bloc*/
 #alignement{
-    background-color: black;
+    background-color: red;
     padding: 50px;
     display: flex; /*ceci force les blocs a s'aligner*/
     justify-content: space-evenly; /*justifier l'alignement*/
@@ -95,4 +95,13 @@ div{
     width: 20%;
     background-color: gray;
     height: 100px;
+    list-style: none; /* pour gerer les puces sur les listes*/
+}
+
+#alignement2{
+    
+}
+
+#img1{
+
 }
