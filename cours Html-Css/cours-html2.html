@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- la balise doctype est une balise orpheline, elle permet de définir le type du document -->
+ <!-- la balise html est la balise mère qui contient toutes les autres balise donc elle se ferme en dernier -->
+<html lang="en">
+    <!-- la balise head permet de communiquer avec les moteurs de recherche et les navigateurs, son contenu reste invisible au niveau du navigateur excepté le contenu de la balise title -->
+    <head>
+        <!-- la balise meta charset permet de définir l'encodage utilisé et utf8 est l'encodage qui prend en compte toutes les subtilités de la langue française -->
+        <meta charset="UTF-8">
+        <!-- la balise meta viewport permet d'adapter la contenu de la page en fonction de la taille du device utilisé -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- la balise title apparaît dans l'onglet du navigateur elle permet de donner un titre à chaque page -->
+        <title>
+            Cours HTML&CSS
+        </title>
+    </head>
+    <body>
+        <!-- la balise body va contenir le corps de nos pages, elle sera séparée en 3 parties, l'entete, le corp et le pied de page -->
+        <!-- la balise header va contenir tous les elements de notre entete de page -->
+         <header>
+            <!-- la balise nav va contenir tous les liens de navigation de l'entete -->
+             <h1>
+                Cours HTML/CSS
+            </h1>
+            <nav>
+
+            </nav>
+         </header>
+         <!-- la balise main va contenir tout le corps de la page -->
+        <main>
+            <!--https://developer.mozilla.org/fr/docs/Web/HTML/Element-->
+            <h2>1. les balistiques titres</h2>
+            <p>
+                Les balises titres sont toutes des balises blocks, elles vont de h1 a h6.
+                La balise h1 est la plus importante, il ne doit y en avoir qu'une seule.
+                Elle ne doit pas depasser les 70 carac et elle doit integrer des mots cles pour un meilleur referencement.
+            </p>
+            <h1>Je suis la balise H1</h1>
+            <h2>Je suis la balise H2</h2>
+            <h3>Je suis la balise H3</h3>
+            <h4>Je suis la balise h4 </h4>
+            <h5>Je suis la balise h5</h5>
+            <h6>Je suis la balise h6</h6>
+            
+            <h2>2. Les balises texte </h2>
+            <p>Je suis une balise paragraphe et je suis une balise bloc</p>
+            <span>je suis une balise span et je suis une balise inline</span>
+            <span>je suis une balise span et je suis une balise inline</span>
+            <span>
+                Le span est une balise inline alors que le p est une balise bloc. 
+                Les balises bloc sont des balises egoistes, car elles ne partagent pas la ligne.
+                Tant dis que les balises inline sont plutot altruiste, elles partagent la ligne.
+            </span>
+            <br><span>La balise br permet le saut de ligne. Elle va etre generalement utilise avec les balises inlines.</span>
+            <br><u>La balise u permet de souligner</u>
+            <br><i>La balise i et em permet de mettre en italique</i>
+            <!-- i est obsolete -->
+             <br><strong>la balise strong ou bolder et meme b met en gras</strong>
+            <!-- strong est obsolete-->
+            <br><sub>la balise sub permet de mettre en indice</sub>
+            <br><sup>la balise sup permet de mettre en exposant</sup>
+            <br><s>la balise s et strike permet de barrer le texte</s>
+            <!-- strike est obsolete-->
+            <br><u><b>NB: les balises obsoletes</b></u>
+            <br><center>la balise center permet de centrer un element</center>
+            <br><big>la balise big permet de grossir le texte</big>
+            <br><small>la balise small permet de reduire le texte</small>
+             
+            <h2>3. Les balises listes</h2>
+
+                <h3>3.1. les listes ordonnees</h3>
+                 <p>
+                    les balises listes fontionnent avec 2 paires de balises, 
+                    une paire qui va definir si il s'agit d'une liste ordonne ou non, 
+                    une autre qui va definir les element de la liste.
+                    Les balises liste sont des balises bloc.
+                </p>
+                    <ol><!--ordonne liste-->
+                        <li>Premier</li> <!-- element de la liste-->
+                        <li>Deuxieme</li>
+                        <li>Troisieme</li>
+                    </ol>
+                <p>On peut changer les tyupes de puces avec l'attribut type</p>
+                <p>liste avec type A:</p>
+                    <ol type="A"><!--ordonne liste-->
+                        <li>Premier</li> <!-- element de la liste-->
+                        <li>Deuxieme</li>
+                        <li>Troisieme</li>
+                    </ol>
+                <p>liste avec type a:</p>
+                    <ol type="a"><!--ordonne liste-->
+                        <li>Premier</li> <!-- element de la liste-->
+                        <li>Deuxieme</li>
+                        <li>Troisieme</li>
+                    </ol>
+                 <p>liste avec type I:</p>
+                    <ol type="I"><!--ordonne liste-->
+                        <li>Premier</li> <!-- element de la liste-->
+                        <li>Deuxieme</li>
+                        <li>Troisieme</li>
+                    </ol>
+                <p>liste avec type i:</p>
+                    <ol type="i"><!--ordonne liste-->
+                        <li>Premier</li> <!-- element de la liste-->
+                        <li>Deuxieme</li>
+                        <li>Troisieme</li>
+                    </ol>
+
+                <h3>Les listes desordonnes</h3>
+                <p>Elles fontionnent comme les listes ordonnees.</p>
+                    <ul><!--desordonne liste-->
+                        <li>Henri</li> <!-- element de la liste-->
+                        <li>Tristan</li>
+                        <li>Theo</li>
+                    </ul>
+                <p>liste avec type cercle(circle):</p>
+                    <ul type="circle"><!--desordonne liste-->
+                        <li>Henri</li> <!-- element de la liste-->
+                        <li>Tristan</li>
+                        <li>Theo</li>
+                    </ul>
+                <p>liste avec type carre(square):</p>
+                    <ul type="square"><!--desordonne liste-->
+                      <li>Henri</li> <!-- element de la liste-->
+                      <li>Tristan</li>
+                      <li>Theo</li>
+                    </ul>
+                <h3>3.3 Les listes definis</h3>
+                <p> Elles fonctionnent comme les autres listes sauf que cette fois tout est defini le programmeur et elle ne supporte pas les types.</p>
+                <dl><!--define liste: definir la liste-->
+                    <dt>Prenom</dt><!--define title= met un titre sur la liste-->
+                    <dd>Mathieu</dd><!-- define data = defini une donnee de la liste-->
+                    <dd>Gracia</dd>
+                </dl>
+            <h2>4. L'ancre</h2>
+            <p>
+                La balise a comme ancre permet de creer des liens hypertexte pour faciliter la navigation entre les pages web.
+                C'est une balise inline. Son attribut href doit contenir l'adresse du lien ou on souhaite envoyer l'utilisateur.
+            </p>
+            <a href="https://www.google.fr/" target="_blank">Google</a>
+            </main>
+        <!-- la balise footer va contenir tous les elements du pied de la page -->
+         <footer>
+
+         </footer>
+    </body>
+</html>
