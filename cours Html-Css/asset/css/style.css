@@ -56,4 +56,5 @@ div{
     font-style: italic;/*pour changer le style */
     text-align: left;
     text-transform: uppercase; /*pour transformer le texte maj, min, capital...*/
+    text-decoration: underline; /*pour ajouter une decoration*/
 }
