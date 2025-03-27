@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+
+@font-face {
+    font-family: "janat";
+    src: url(../fonts/lastica.ttf);
+}
+
 h1{
     font-size: 2em;
     color: red;
@@ -65,4 +72,25 @@ div{
 
 #changetypo{
     font-family: "Boldonse", system-ui;
+}
+
+#changetypo2{
+    font-family: "Bungee Tint", sans-serif;
+}
+
+#changetypo3{
+    font-family: "janat";
+}
+
+/*propriete bloc*/
+#alignement{
+    background-color: black;
+    padding: 50px;
+}
+
+#alignement li{
+    width: 20%;
+    background-color: gray;
+    height: 100px;
+    margin-bottom: 10px;
 }
