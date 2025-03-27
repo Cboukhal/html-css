@@ -106,6 +106,7 @@ div{
 #img1{
     width: 25%;
     float: left; /*permet d'aligner les elements*/
+    margin: 10px; /*marge externe*/
 }
 
 #pg1{
