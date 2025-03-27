@@ -25,12 +25,14 @@
      </header>
     <main>
     <h2>10.Balises Css</h2>
+
         <h3>10.1 Introduction</h3>
         <p>
             Le CSS (cascading style sheet) est un langage informatique qui permet de styliser les documents HTML.
             Il permet de controler l'apparence ou la presentation des pages HTML.
             Les standards definissants le CSS sont publiés par le W3C.
         </p>
+
         <h3>10.2 Objectifs</h3>
         <ul>
             <li>Separer le fond de la forme, c'est a dire separer la structure html des styles css.</li>
@@ -38,12 +40,14 @@
             <li>Controler exclusivement la forme et non le fond.</li>
             <li>Interpretation et compatibilite avec les navigateurs.</li>
         </ul>
+
         <h3>10.3 Historique</h3>
         <ol>
             <li>La premiere version du CSS a ete publiés en 1996.</li>
             <li>En 1997 internet explorer utiliser le Css.</li>
             <li>En 1998 le W3C publie la premiere version de CSS qui va devenir la norme de style conforme.</li>
         </ol>
+
         <h3>10.4 La localisation</h3>
             <p>Dans un document Html, on peut retrouver le css dans 3 endroits distincts.</p>
             <h4>Le CSS intraligne</h4>
@@ -51,18 +55,21 @@
                 <br><u><b>Exemple:</b></b></u>
                 </p>
                 <span style="color:red; font-size: 2em;" >Je suis un span avec du style intraligne css</span>
+
             <h4>Le CSS interne</h4>
                 <p>Cette methode bien qu'elle fonctionne, n'est pas bien recommander par le W3C car il s'agit de mettre le CSS dans le head du document.
                     A l'aide de la balise style.
                     <br><u><b>Exemple:</b></u>
                     <br>Voir le head de la page.
                 </p>
+
             <h4>Le CSS externe</h4>
                 <p>Cette methode correspond a la recommendation W3C qui consiste a separer le font de la forme .
                     Le CSS est ecrit dans un fichier externe generalement nomme style.css dans un repertoire css inclus dans un autre repertoire asset.
                 <br><u><b>Exemple:</b></u>
                 <br>Voir le dossier assets du projet cours Html-Css</p>
-            <h4>Principes</h4>
+
+        <h3>10.5 Principes</h3>
                 <p>La synthaxe du css se compose d'un ensemble de selecteur suivi par un bloc d'instructions delimite par des accolades.
                     Chaque instruction est compose d'une propriete suivi de : et d'une valeur et se termine par un point virgule (;)
                 <br><u><b>Exemple:</b></u>
@@ -83,11 +90,22 @@
                 <li>Class</li>
                 <li>Element balise(s)</li>
             </ol>
-            <p><u><b>Exemple</b></u></p>
+            <p><u><b>Exemple</b></u>:</p>
             <div>DIV ZERO</div>
             <div id="divone">DIV 1</div>
             <div class="divtwo">DIV 2</div>
             <div class="divtwo">DIV 3</div>
+
+        <h3>10.6 Propriete</h3>
+        <p>Le CSS fonctionne comme les objets en programmation oriente objet.
+            Il possede des proprietes auxquelles on assoccie des valeur, par exemple pour la propriete color on peut associer la couleur que l'on souhaite.
+            color:green;
+        </p>
+            <h4>Proprietes textes</h4>
+            <p><b><u>Exemple</u></b></p>
+            <br>voir <a href="./asset/css/style.css" target="_blank">style.css</a> 
+            <p id="test">je suis le paragraphe pour tester les proprietes textes.</p>
+
     </main>
 </body>
 </html>

@@ -40,7 +40,6 @@ div{
 .divtwo{
     width: 70%;
     background-color: green;
-
 }
 
 /*les classes sont en priorite*/
@@ -48,4 +47,8 @@ div{
 #divone{
     width: 80%;
     background-color: rebeccapurple;
+}
+
+#test{
+    text-align: left;
 }
