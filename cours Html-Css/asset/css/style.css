@@ -87,7 +87,8 @@ div{
     background-color: black;
     padding: 50px;
     display: flex; /*ceci force les blocs a s'aligner*/
-    justify-content: space-evenly;
+    justify-content: space-evenly; /*justifier l'alignement*/
+    align-items: center; /*alignement vertical*/
 }
 
 #alignement li{
