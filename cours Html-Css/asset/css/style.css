@@ -48,7 +48,10 @@ div{
     width: 80%;
     background-color: rebeccapurple;
 }
-
+/*propriete test*/
 #test{
+    font-size: 2em; /*Pour ajuster la taille de la typographie 1em=16px*/
+    font-family: 'Courier New', Courier, monospace; /*Pour changer la typo */
+    font-weight: bold; /*pour appliquer la typo*/
     text-align: left;
 }
