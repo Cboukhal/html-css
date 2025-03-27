@@ -57,4 +57,12 @@ div{
     text-align: left;
     text-transform: uppercase; /*pour transformer le texte maj, min, capital...*/
     text-decoration: underline; /*pour ajouter une decoration*/
+    text-indent: 200px; /*pour implenter ou decaler le texte*/
+    color: aquamarine;
+    text-shadow: 4px 2px 6px black; /*mettre une ombre au texte*/
+    letter-spacing: 4px; /*espace entre les lettres*/
+}
+
+#changetypo{
+    
 }
