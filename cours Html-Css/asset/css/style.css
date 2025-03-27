@@ -112,3 +112,26 @@ div{
 #pg1{
     text-align: justify;
 }
+
+/*superposition*/
+
+.mere{
+    width: 100%;
+    position: relative; /*position du dessous*/
+    background-color: transparent;
+}
+.mere img{
+    width: 100%;
+}
+.enfant{
+    width: 100%;
+    background-color: transparent;
+    position: absolute; /*position du dessus*/
+    top: 400px;
+}
+.enfant h5{
+    font-size: 4em;
+    color: brown;
+    text-shadow: 1px 2px 3px black;
+    text-align: center;
+}
