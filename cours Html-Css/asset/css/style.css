@@ -142,3 +142,18 @@ div{
 #decal{
     height: 1700px;
 }
+
+#boutton{
+    background-color: blue;
+    color: gold;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 30px;
+    z-index: 500; /*ne pas mixer les positions avec le z-index car elles prendront toujours la priorite */
+    margin-top: -1000px;
+    position: absolute;
+    /* pour centrer les balises inlines */
+    margin-left: 50%;
+    transform: translate(-50%);
+}
