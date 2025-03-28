@@ -34,7 +34,7 @@ h4{
 }
 
 p{
-    text-align: center;
+    text-align: left;
 }
 
 div{
@@ -268,7 +268,7 @@ nav ol{
     transform: translate(-50%);
 }
 nav ol li{
-    background-color: gold;
+    background-color: ghostwhite;
     width: 70%;
     padding: 10px;
     margin-bottom: 10px;
@@ -277,7 +277,7 @@ nav ol li{
     text-align: center;
 }
 nav ol li a{
-    color: red;
+    color: rgb(48, 36, 36);
     font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
