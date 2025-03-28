@@ -143,7 +143,7 @@ div{
     height: 1700px;
 }
 
-#boutton{
+.boutton{
     background-color: blue;
     color: gold;
     font-size: 1em;
@@ -157,4 +157,19 @@ div{
     margin-left: 50%;
     transform: translate(-50%);
     /* -----------------------*/
+}
+
+/*speudo classe*/
+
+#parasc::first-letter{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: green;
+}
+
+#ulsc li:first-child,
+#ulsc li:last-child{
+    background-color: blueviolet;
+    font-size: 2em;
+
 }
