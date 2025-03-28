@@ -156,8 +156,9 @@ div{
     /* pour centrer les balises inlines */
     margin-left: 50%;
     transform: translate(-50%);
-    /* -----------------------*/
 }
+
+/* -----------------------*/
 
 /*speudo classe*/
 
@@ -181,4 +182,29 @@ div{
     background-color: orange;
     color: aquamarine;
 }
+#asc:visited{
+    background-color: red;
+    color: gold;
+}
 
+.boutton:hover{
+    background-color: black;
+    color: white;
+}
+
+/*psuedo element*/
+
+#parase{
+    font-size: 2em;
+    color: greenyellow;
+}
+#parase::before{
+    content: "Qui t'accompagne ? <";
+    color: blueviolet;
+    background-color: gold;
+}
+#parase::after{
+    content: "> Ah bon!";
+    color: gold;
+    background-color: blueviolet;
+}
