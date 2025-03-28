@@ -248,3 +248,11 @@ div{
     height: 200px;
     grid-area: img5;
 }
+
+/*les medias queries*/
+
+@media screen and (min-width: 501px) and (max-width: 900px){
+    *{
+        background-color: greenyellow;
+    }
+}
