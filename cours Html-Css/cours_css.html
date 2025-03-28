@@ -221,7 +221,19 @@
                 <p>Une requete media se compose d'un type de media optionnelle et d'une ou plusieurs expressions de caracteristiques de media.
                     Plusieurs peuvent etre combines entre elles grace a des operateurs logiques. 
                     Les requetes media ne sont sensibles a la casse.
+                    <br>Une requete media aut true si le type de media correspond a l'appareil utilise sinon elle vaut false.
                 </p>
+                <h4>Type de media</h4>
+                <p>Un type de media defini une categorie general d'appareils.
+                    Le type de media est optionnel dans une requete media, sauf si celle-ci utilise les operateurs logique not ou only.
+                    Par defaut, le type de media utilisé est le all.
+                </p>
+                <ul>
+                    <li>all</li><span>correspond à tous les types de média</span>
+                    <li>print</li><span>correspond au media paginé sur un support écrit</span>
+                    <li>screen</li><span>correspond aux appareils dotés d'un écran</span>
+                    <li>speech</li><span>correspond aux appareils avec une synthése locale</span>
+                </ul>
     </main>
 </body>
 </html>
