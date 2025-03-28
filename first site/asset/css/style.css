@@ -4,3 +4,26 @@
     font-family: "janat";
     src: url(../fonts/lastica.ttf);
 }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    background-color: green;
+    height: 80px;
+}
+header image{
+    width: 50px;
+    height: 60px;
+}
+header nav{
+    width: 80%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
