@@ -122,6 +122,13 @@ h2{
     padding: 10px;
     margin: 40px 0; /*axe y, axe x*/
 }
+h3{
+    font-size: 1.8em;
+    color: aquamarine;
+    -webkit-text-stroke: 1px cornflowerblue;
+    text-align: left;
+    padding: 10px;
+}
 /**********************************************FOOTER**********************************************/
 
 footer{
