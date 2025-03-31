@@ -5,6 +5,8 @@
     src: url(../fonts/lastica.ttf);
 }
 
+/*https://flexboxfroggy.com/#fr*/
+
 *{
     padding: 0;
     margin: 0;
@@ -177,13 +179,18 @@ h4{
 .blog .article3{
     width: 30%;
     text-align: left;
+    border: 2px solid goldenrod;
+    border-radius: 15px;
 }
 .article1 img,
 .article2 img,
 .article3 img{
-    width: 20%;
+    width: 30%;
     height: 150px;
     float: left;
+    border: 2px solid goldenrod;
+    border-radius: 15px;
+    margin: 0 10px;
 }
 
 /**********************************************FOOTER**********************************************/
