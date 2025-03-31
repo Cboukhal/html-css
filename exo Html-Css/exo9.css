@@ -2,8 +2,11 @@ body{
     font-family: Helvetica;
   }
   #le-saviez-vous{
-
+    background-color: #CCE;
   }
   .description{
-    
+    color: #445;
+  }
+  .definition{
+    font-size : 130%;
   }
