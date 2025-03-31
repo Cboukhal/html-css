@@ -1,0 +1,27 @@
+.long-hand-padding{
+    padding-top: 10px; 
+    padding-right: 15px; 
+    padding-bottom: 5px; 
+    padding-left: 25px;
+  }
+  
+  .short-hand-padding{
+      /*Retranscrivez le style des marges internes suivantes en notation short-hand */
+    padding: 10px 15px 5px 25px;
+  }
+    
+  .long-hand-margin{
+    margin-top: 10px; 
+    margin-right: 10px; 
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  
+  .short-hand-padding{
+      /*Retranscrivez le style des marges externes suivantes en notation short-hand */
+    margin: 10px;
+  }
+  
+  p{
+    background-color: #FCC;
+  }

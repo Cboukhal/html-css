@@ -1,0 +1,10 @@
+.latin{
+    font-style: italic; /*Texte en italique*/
+    color: #444; /*Texte en gris*/
+  }
+  
+  .arbre{
+    width: 500px; /*Reglage de la Largeur du bloc */
+    margin : 25px auto; /* Blocs espacés et centrés horizontalement*/
+    background-color: #FDA /*Arrière plan orange clair.*/
+  }
