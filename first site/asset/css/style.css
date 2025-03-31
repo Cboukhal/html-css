@@ -83,5 +83,11 @@ ul li a:hover{
 footer .milieu p{
     font-size: 1.2em;
     color: rgb(157, 182, 194);
-    margin-top: 100px;
+    margin-top: 200px;
+}
+.gauche, .droite{
+    width: 30%;
+}
+.milieu{
+    width: 40%;
 }
