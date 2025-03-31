@@ -2,27 +2,27 @@ body{
     font-family : Roboto, Verdana, sans-serif;
   }
   
-  ...{
+  li{
     list-style-type: none;
     width : 250px; 
     padding: 0px 0px 0px 5px;
   }
   
-  ...{
+  .matiere{
     background-color : #AAF;
     font-weight: bold;
   }
   
-  ...{
+  .note{
     text-align : right;
   }
   
-  ...{
+  #moyenne{
     font-size : 22px;
     font-weight: bold;
   }
   
-  ...{
+  #titre-moyenne{
     background-color : #FA5;
     text-transform: uppercase;
   }
