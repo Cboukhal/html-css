@@ -1,0 +1,15 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 strong{
+    font-weight: bold;
+}
+
+#first{
+    font-style: italic;
+}
+
+p strong{
+    color: red;
+}
