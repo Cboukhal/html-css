@@ -120,16 +120,16 @@ h1 span{
 }
 main h2{
     font-size: 2em;
-    color: aqua;
-    background-color: crimson;
+    color: rgb(20, 70, 110);
+    background-color: rgb(157, 182, 194);
     text-align: center;
     padding: 10px;
     margin: 40px 0; /*axe y, axe x*/
 }
 h3{
     font-size: 1.8em;
-    color: aquamarine;
-    -webkit-text-stroke: 1px cornflowerblue;
+    color: rgb(20, 70, 110);
+    /* -webkit-text-stroke: 1px rgb(167, 168, 160); */
     text-align: left;
     padding: 10px;
 }
@@ -158,6 +158,11 @@ h4{
     border-radius: 50px;
     padding: 20px 0;
     transition: 0.5s;
+}
+.gauche img:hover,
+.milieu img:hover,
+.droite img:hover{
+    box-shadow: -8px -11px 3px 5px black;
 }
 
 /**********************************************FOOTER**********************************************/
