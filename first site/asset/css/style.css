@@ -57,3 +57,10 @@ nav ul li a:hover{
 
 
 /**********************************************FOOTER**********************************************/
+footer{
+    display: flex;
+    justify-content: space-evenly; /*align vertical*/
+    align-items: center;
+    background-color: rgb(20, 70, 110);
+    padding: 50px;
+}
