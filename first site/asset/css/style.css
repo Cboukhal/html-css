@@ -55,8 +55,23 @@ nav ul li a:hover{
 
 /**********************************************MAIN**********************************************/
 
+/**********************************************BANIERE**********************************************/
+
+.baniere{
+    position: relative;
+    text-align: center;
+}
+.baniere img{
+    width: 100vw; /*taille d'ecran*/
+    height: 70vh; /*hauteur d'ecran*/
+}
+.elementsup{
+    position: absolute;
+    top: 40%;
+}
 
 /**********************************************FOOTER**********************************************/
+
 footer{
     display: flex;
     justify-content: space-evenly; /*align vertical*/
