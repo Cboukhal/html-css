@@ -1,0 +1,19 @@
+.oswald{
+    font-family : 'Oswald', Verdana, sans-serif ;
+  }
+  
+  .montserrat{
+    font-family : 'Montserrat', Verdana, sans-serif ;
+  }
+  
+  .italique{
+    font-style: italic;
+  }
+  
+  .en-gras{
+    font-weight: bold;
+  }
+  
+  .en-grand{
+    font-size: 50px;
+  }
