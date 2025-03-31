@@ -68,6 +68,15 @@ nav ul li a:hover{
 .elementsup{
     position: absolute;
     top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+h1{
+    font-size: 4em;
+    color: rgb(20, 70, 110);
+    text-shadow: 1px 2px 3px black;
+    -webkit-text-stroke: 1px rgb(157, 182, 194); /*contour du texte*/
 }
 
 /**********************************************FOOTER**********************************************/
