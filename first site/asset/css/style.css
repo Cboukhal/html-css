@@ -79,10 +79,23 @@ h1{
     -webkit-text-stroke: 1px rgb(157, 182, 194); /*contour du texte*/
 }
 h1 span{
-    font-size: 1em;
+    font-size: 35px;
     font-weight: lighter;
     color: rgb(157, 182, 194);
-    -webkit-text-stroke: 1px rgb(20, 70, 110);
+    /* -webkit-text-stroke: 1px rgb(20, 70, 110); */
+}
+.btn{
+    background-color: rgb(157, 182, 194);
+    color: rgb(20, 70, 110);
+    font-size: 1 em;
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid black; /*bordure de l'élément*/
+    margin-top: 20px;
+}
+.btn:hover{
+    background-color: rgb(20, 70, 110);
+    color: rgb(88, 160, 85);
 }
 
 /**********************************************FOOTER**********************************************/
