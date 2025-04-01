@@ -208,7 +208,7 @@ h4{
 }
 .map iframe{
     width: 100%;
-    height: 600px;
+    height: 650px;
     border: 0;
     border-radius: 50px;
 }
@@ -234,8 +234,37 @@ input, textarea{
 .reserve{
     padding-right: 35%;
 }
+#cgu{
+    width: 10%;
+    height: 20px;
+    float: left;
+}
 .cgu{
-
+    color: rgb(20, 70, 110);
+    font-size: 1em;
+    float: left;
+}
+.cgu a{
+    color: rgb(88, 160, 85);
+    text-decoration: none;
+}
+.cgu a:hover{
+    color: blueviolet;
+    text-decoration: none;
+}
+#submit{
+    width: 20%;
+    padding-bottom: 35px;
+    font-size: 1em;
+}
+form p{
+    color: red;
+    margin-bottom: 20px;
+    text-align: left;
+}
+input:focus{
+    background-color: aliceblue;
+    color: black;
 }
 
 /**********************************************FOOTER**********************************************/
@@ -274,4 +303,19 @@ footer .milieu p{
 }
 .milieu{
     width: 40%;
+}
+
+/**********************************************A propos**********************************************/
+
+#imgsqn{
+    height: 500px;
+}
+.valeur{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.v1{
+
 }
