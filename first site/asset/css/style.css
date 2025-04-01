@@ -317,5 +317,15 @@ footer .milieu p{
     margin-bottom: 50px;
 }
 .v1{
-
+    width: 30%;
+    height: 100px;
+    background-color: rgb(20, 70, 110);
+    border-radius: 50px;
+}
+.v1 p{
+    text-align: center;
+    color: rgb(157, 182, 194);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 35px;
 }
