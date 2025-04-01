@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/lastica.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/lastica.ttf);
+}
 .oswald{
     font-family : 'Oswald', Verdana, sans-serif ;
   }
