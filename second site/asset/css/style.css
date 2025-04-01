@@ -22,30 +22,121 @@ header
     background-color: rgb(220, 228, 231);
     height: 80px;
 }
-header img{
+
+header img
+{
     width: 70px;
     height: 70px;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 100px;
 }
-header nav{
+
+header nav
+{
     width: 80%;
 }
-header nav ul{
+
+header nav ul
+{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 80px;
     list-style: none;
 }
-nav ul li a{
+
+nav ul li a
+{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5em;
     font-weight: bold;
     color: rgb(9, 68, 116);
     text-decoration: none;
 }
-nav ul li a:hover{
+
+nav ul li a:hover
+{
     color: whitesmoke;
+}
+
+/******************************* BANNIERE *******************************/
+
+.Banniere
+{
+    position: relative;
+    text-align: center;
+}
+
+.ImgAcc
+{
+    width: 100vw; /*taille d'ecran*/
+    height: 70vh; /*hauteur d'ecran*/
+}
+
+.acc
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.acc h1
+{
+    margin-bottom: 100px;
+    color: rgb(9, 68, 116);
+}
+
+.acc h1 span
+{
+    text-align: left;
+    color: black;
+}
+
+/******************************* FOOTER *******************************/
+
+footer{
+    display: flex;
+    justify-content: space-evenly; /*align vertical*/
+    align-items: center;
+    background-color: rgb(220, 228, 231);
+    padding: 50px;
+}
+footer h2{
+    font-size: 1.5em;
+    color: rgb(157, 182, 194);
+    text-decoration: underline;
+    margin: 10px 0;
+}
+ul li{
+    list-style: none;
+    padding: 10px;
+}
+ul li a{
+    color: rgb(9, 68, 116);
+    text-decoration: none;
+}
+ul li a:hover{
+    color: whitesmoke;
+}
+footer .milieu p{
+    font-size: 1.2em;
+    color: rgb(5, 51, 88);
+}
+.gauche, .droite{
+    width: 30%;
+}
+.gauche
+{
+    text-align: left;
+}
+.droite
+{
+    text-align: right;
+}
+.milieu{
+    width: 40%;
+    text-align: center;
 }
