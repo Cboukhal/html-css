@@ -333,14 +333,18 @@ footer .milieu p{
 /**********************************************Contact**********************************************/
 
 #formulaire{
-
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 #map{
-
+    width: 100%;
 }
 #contact{
-
+    display: block;
 }
 #iframe{
-    
+    border-radius: 0;
+    margin-top: -10px;
+    height: 400px;
 }
