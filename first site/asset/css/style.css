@@ -228,6 +228,15 @@ input, textarea{
     height: 30px;;
     margin-bottom: 5px;
 }
+.partage{
+    width: 48%;
+}
+.reserve{
+    padding-right: 35%;
+}
+.cgu{
+
+}
 
 /**********************************************FOOTER**********************************************/
 

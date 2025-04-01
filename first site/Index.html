@@ -119,22 +119,22 @@
                 </aside>
                 <aside class="formulaire">
                     <form action="">
-                        <label for="Prenom">Penom<span>*</span></label>
-                        <label for="Nom">Nom<span>*</span></label>
+                        <label for="Prenom" class="reserve">Penom:<span>*</span></label>
+                        <label for="Nom">Nom:<span>*</span></label>
 
-                        <input type="text" id="prenom" placeholder="Jean" required class="partage">            
+                        <br><input type="text" id="prenom" placeholder="Jean" required class="partage">            
                         <input type="text"id="nom" placeholder="Boucher" required class="partage">
 
-                        <br><label for="Mail">Mail<span>*</span>:</label>
+                        <br><label for="Mail">Mail:<span>*</span></label>
                         <input type="email"id="mail" placeholder="jean@hotmail.com" required>
 
-                        <label for="Adresse">Adresse<span>*</span>:</label>
+                        <label for="Adresse">Adresse:<span>*</span></label>
                         <input type="text"id="adresse" placeholder="5 avenue de la paix" required>
 
-                        <br><label for="Cp">Code Postal<span>*</span></label>
-                        <label for="Ville">Ville<span>*</span></label>
+                        <br><label for="Cp" class="reserve">Code Postal:<span>*</span></label>
+                        <label for="Ville">Ville:<span>*</span></label>
             
-                        <input type="number"id="cp" placeholder="75001" required class="partage">
+                        <br><input type="number"id="cp" placeholder="75001" required class="partage">
                         <input type="text"id="ville" placeholder="Paris" required class="partage">
 
                         <br><label for="pays">Pays:</label>
@@ -144,8 +144,9 @@
                         <textarea name="" id="message" placeholder="Ecrivez ici votre message" required></textarea>
 
                         <br><label for="cgu">Accord<span>*</span>:</label>
-                        <input type="checkbox" id="cgu" required>
-                        <br><span>En cochant cette case, vous acceptez nos <a href="./cgu.html">CGU</a></span>
+                        <br><input type="checkbox" id="cgu" required>
+
+                        <br><span class="cgu">En cochant cette case, vous acceptez nos <a href="./cgu.html">CGU</a></span>
                         <input type="submit" value="Envoyer" class="btn">
                     </form>
                 </aside>
