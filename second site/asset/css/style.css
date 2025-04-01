@@ -14,6 +14,37 @@
     font-family: "Prompt", sans-serif;
 }
 
+body
+{
+    background-image: url("../image/pexels-steve-1266808.jpg");
+}
+
+h2
+{
+    background-color: rgb(220, 228, 231);
+    color: rgb(133, 42, 42);
+    text-align: center;
+    margin: 20px;
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+h3{
+    font-size: 1.8em;
+    color: rgb(9, 68, 116);
+    /* -webkit-text-stroke: 1px rgb(167, 168, 160); */
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+h4{
+    font-size: 1.2em;
+    color: rgb(133, 42, 42);
+    margin: 20px;
+}
+
 /******************************* HEADER *******************************/
 
 header
@@ -77,7 +108,7 @@ nav ul li a:hover
 .acc
 {
     position: absolute;
-    top: 40%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -94,6 +125,152 @@ nav ul li a:hover
     text-align: left;
     color: black;
 }
+.Banniere .bouton{
+    top: 70%;
+    left: 80%; 
+}
+
+.bouton{
+    position: absolute;
+    /* top: 70%;
+    left: 80%; */
+    background-color: rgb(220, 228, 231);
+    color: rgb(9, 68, 116);
+    font-size: 1 em;
+    padding: 20px;
+    border: 1px solid black; /*bordure de l'élément*/
+    cursor: pointer;
+    border-radius: 15px;
+    
+}
+.bouton:hover{
+    background-color: rgb(9, 68, 116);
+    color: whitesmoke;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+/******************************* PROPOS *******************************/
+
+#ME{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(204, 71, 30, 0.788);
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+#Miss,
+#Exp{
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+}
+h4{
+    font-size: 1.2em;
+    color: rgb(9, 68, 116);
+}
+.img
+{
+    width: 25%;
+    height: 15em;
+}
+#Miss .bouton,
+#Exp .bouton
+{
+    width: 10%;
+    top: 50%;
+}
+
+/**********************************************Contact**********************************************/
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.contact .map,
+.contact .formulaire{
+    width: 45%;
+    text-align: left;
+}
+.map iframe{
+    width: 100%;
+    height: 650px;
+    border: 0;
+    border-radius: 50px;
+}
+form{
+    background-color: rgba(204, 71, 30, 0.788);
+    padding: 50px;
+    border-radius: 50px;
+}
+label{
+    color: rgb(20, 70, 110);
+}
+label span{
+    color: black;
+}
+input, textarea{
+    width: 98%;
+    height: 30px;;
+    margin-bottom: 5px;
+}
+.partage{
+    width: 48%;
+}
+.reserve{
+    padding-right: 35%;
+}
+#cgu{
+    width: 10%;
+    height: 20px;
+    float: left;
+}
+.cgu{
+    color: rgb(20, 70, 110);
+    font-size: 1em;
+    float: left;
+}
+.cgu a{
+    color: rgb(88, 160, 85);
+    text-decoration: none;
+}
+.cgu a:hover{
+    color: rgb(101, 93, 223);
+    text-decoration: none;
+}
+#submit{
+    width: 20%;
+    padding-bottom: 35px;
+    font-size: 1em;
+}
+form p{
+    color: black;
+    margin-bottom: 20px;
+    text-align: left;
+}
+input:focus{
+    background-color: aliceblue;
+    color: black;
+}
+#formulaire{
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#map{
+    width: 100%;
+}
+#contact{
+    display: block;
+}
+#iframe{
+    border-radius: 0;
+    margin-top: -10px;
+    height: 400px;
+}
 
 /******************************* FOOTER *******************************/
 
@@ -108,7 +285,7 @@ footer h2{
     font-size: 1.5em;
     color: rgb(157, 182, 194);
     text-decoration: underline;
-    margin: 10px 0;
+    margin-right: 5px;
 }
 ul li{
     list-style: none;
@@ -128,15 +305,19 @@ footer .milieu p{
 .gauche, .droite{
     width: 30%;
 }
-.gauche
+
+.gauche,
+.gauche h2
 {
     text-align: left;
 }
-.droite
+.droite,
+.droite h2
 {
     text-align: right;
 }
 .milieu{
     width: 40%;
     text-align: center;
+    text-decoration: underline;
 }
