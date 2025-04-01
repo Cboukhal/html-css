@@ -34,23 +34,37 @@ Le footer devra etre composé par le plan du site, les grpd et le copyright -->
     </header>
 
     <main>
-        <div>
+        <div class="Banniere">
             <img class="ImgAcc" src="./asset/image/image-accueil.jpg" alt="Image d'accuiel ">
             <div>
-                <h1>Accueil</h1>
-                <br><span>Bienvenu sur notre site. 
-                    Ici vous pourrez avancer dans se que vous voulez. 
-                    N'hésiter pas à nous contacter pour plus de réponse.</span>
+                <h1>
+                    Accueil
+                    <br><span>
+                            Bienvenu sur notre site. 
+                            Ici vous pourrez avancer dans se que vous voulez. 
+                            N'hésiter pas à nous contacter pour plus de réponse.
+                        </span>
+                </h1>
                 <a href="./Contact.html"><button>Contactez-nous</button></a>
             </div>
         </div>
         <!----------------------Propos---------------------->
         <h2>Présentation de l'organisme</h2>
         <section>
-            <h3>Mission</h3>
-            <p></p>
-            <a href="./Propos.html"><button>En savoir plus</button></a>
-            <h3>Expertise</h3>
+            <h3>Mission et Expertise</h3>
+            <article>
+                <img src="./asset/image/Mission.jfif" alt="Mission">
+                <h4>Mission</h4>
+                <p></p>
+                <a href="./Propos.html"><button>En savoir plus</button></a>
+            </article>
+            <article>
+                <img src="./asset/image/expertise.jpg" alt="Expertise">
+                <h4>Expertise</h4>
+                <p></p>
+                <a href="./Propos.html"><button>En savoir plus</button></a>
+            </article>
+            <h3>Point fort</h3>
             <p></p>
             <a href="./Propos.html"><button>En savoir plus</button></a>
         </section>
@@ -59,36 +73,94 @@ Le footer devra etre composé par le plan du site, les grpd et le copyright -->
             <section>
                 <h3>Mission</h3>
                 <p></p>
-                <a href="./Propos.html"><button>En savoir plus</button></a>
+                <a href="./formation.html"><button>En savoir plus</button></a>
                 <h3>Expertise</h3>
                 <p></p>
-                <a href="./Propos.html"><button>En savoir plus</button></a>
+                <a href="./formation.html"><button>En savoir plus</button></a>
             </section>
             <!----------------------Temoignage---------------------->
             <h2>Témoignages et avis</h2>
             <section>
                 <h3>Témoignages</h3>
                 <p></p>
-                <a href="./Temoignage.html"><button>En savoir plus</button></a>
+                <a href="./Temoignage.html"><button>En voir plus</button></a>
                 <h3>Avis</h3>
                 <p></p>
-                <a href="./Temoignage.html"><button>En savoir plus</button></a>
+                <a href="./Temoignage.html"><button>En voir plus</button></a>
             </section>
             <!----------------------Contact---------------------->
             <h2>Contact</h2>
-            <section>
-                <h3>Témoignages</h3>
-                <p></p>
-                <a href="./Temoignage.html"><button>En savoir plus</button></a>
-                <h3>Avis</h3>
-                <p></p>
-                <a href="./Temoignage.html"><button>En savoir plus</button></a>
+            <section class="contact">
+                <aside class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20781.91131009632!2d2.4112154834647543!3d49.37601297826179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1743427225282!5m2!1sfr!2sfr" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </iframe>
+                </aside>
+                <aside class="formulaire">
+                    <form action="">
+                        <h3>Ecrivez-nous</h3>
+                        <p>
+                            *champ obligatoire.
+                        </p>
+                        <label for="Prenom" class="reserve">Penom:<span>*</span></label>
+                        <label for="Nom">Nom:<span>*</span></label>
+
+                        <br><input type="text" id="prenom" placeholder="Jean" required class="partage">            
+                        <input type="text"id="nom" placeholder="Boucher" required class="partage">
+
+                        <br><label for="Mail">Mail:<span>*</span></label>
+                        <input type="email"id="mail" placeholder="jean@hotmail.com" required>
+
+                        <label for="Adresse">Adresse:<span>*</span></label>
+                        <input type="text"id="adresse" placeholder="5 avenue de la paix" required>
+
+                        <br><label for="Cp" class="reserve">Code Postal:<span>*</span></label>
+                        <label for="Ville">Ville:<span>*</span></label>
+            
+                        <br><input type="number"id="cp" placeholder="75001" required class="partage">
+                        <input type="text"id="ville" placeholder="Paris" required class="partage">
+
+                        <br><label for="pays">Pays:</label>
+                        <input type="text"id="pays" placeholder="France" >
+
+                        <br><label for="message">Message</label>
+                        <textarea name="" id="message" placeholder="Ecrivez ici votre message" required></textarea>
+
+                        <br><label for="cgu">Accord<span>*</span>:</label>
+                        <br><input type="checkbox" id="cgu" required>
+
+                        <span class="cgu">En cochant cette case, vous acceptez nos <a href="./cgu.html">CGU</a></span>
+                        <br><input type="submit" value="Envoyer" class="btn" id="submit">
+                    </form>
+                </aside>
             </section>
 
     </main>
 
-    <footer>
-
+    <footer aria-label="Pieds de la page avec les mentions importantes">
+        <div>
+            <h2>Plan du site</h2>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./Propos.html">A propos</a></li>
+                    <li><a href="./formation.html">Formation</a></li>
+                    <li><a href="./Temoignage.html">Temoignage/ Avis</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                </ul>
+        </div>
+        <div>
+            <p>Copyright Centre de formation 2025</p>
+        </div>
+        <div>
+            <h2>RGPD</h2>
+                <ul>
+                    <li><a href="./mentionleg.html">Mentions légales</a></li>
+                    <li><a href="./polconf.html">Politiques des confidentialité</a></li>
+                    <li><a href="./cgu.html">CGU</a></li>
+                    <li><a href="./polcook.html">Politique des cookies</a></li>
+                    <li><a href="./acc.html">Accessibilité</a></li>
+                </ul>
+        </div>
     </footer>
 
 </body>
