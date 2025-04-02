@@ -247,17 +247,18 @@ h4{
 .Contact{
     position: relative;
     /* text-align: center; */
+    padding-bottom: 150px;
 }
 .Contact iframe{
     width: 70%;
-    height: 500px;
+    height: 900px;
     border: 0;
     margin: 10px 50px;
 }
 .elementsup{
     width: 100%;
     position: absolute;
-    top: 40%;
+    top: 30%;
     /* text-align: right; */
 }
 .elementsup form{
@@ -280,8 +281,33 @@ form textarea{
     width: 48%;
 }
 .reserve{
-    padding-right: 35%;
-
+    padding-right: 40%;
+}
+label span, form p{
+    color: red;
+    text-align: left;
+    padding-bottom: 20px;
+    margin: 0;
+}
+#cgu{
+    width: 10%;
+    height: 20px;
+}
+.cgu{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.cgu a{
+    color: black;
+}
+.cgu a:hover{
+    color: blueviolet;
+}
+#submit{
+    width: 20%;
+    padding-bottom: 40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 /****************************************page a PROPOS****************************************/
