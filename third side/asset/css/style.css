@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quando&display=swap');
 
 @font-face {
     font-family: "janat";
@@ -8,3 +9,141 @@
 
 /*https://flexboxfroggy.com/#fr*/
 
+*{
+    margin: 0;
+    padding: 0;
+    /* ecoconception: consomme moins car les pixels sont éteins */
+    /* background-color: black;  */
+}
+
+/******************************** HEADER ********************************/
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    border-bottom: 2px solid rgb(71, 50, 35);
+    background-color: rgb(246, 236, 213);
+}
+
+header .logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15%;
+}
+nav{
+    width: 60%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: rgb(94, 47, 13);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: bisque;
+
+}
+.logo img{
+    height: 60px;
+    width: 60px;
+}
+.logo p{
+    color: rgb(145, 72, 20);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/******************************** BANIERE ********************************/
+
+h1{
+    font-weight: bold;
+    font-size: 5em;
+    color: rgb(94, 47, 13);
+    -webkit-text-stroke: 1px bisque;
+    padding-top: 100px;
+}
+h1 span{
+    font-size: 25px;
+    color: bisque;
+}
+.baniere1 p{
+    color: blanchedalmond;
+    font-size: 1em;
+}
+.btn{
+    color: bisque;
+    background-color: rgb(94, 47, 13);
+    border: 2px solid blanchedalmond;
+    padding: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.btn:hover{
+    color: rgb(94, 47, 13);
+    background-color: bisque;
+    border: 2px solid rgb(94, 47, 13);
+    cursor: pointer;
+}
+.baniere1{
+    height: 70vh;/*prend 70% de l'écran*/
+    /*dregradé de couleur*/
+    /* background: linear-gradient(rgb(143, 126, 101),bisque);  */
+    /* background: url(../image/article-MJ.jpg); */
+    background: linear-gradient(rgba(255, 228, 196, 0.521), rgba(94, 47, 13, 0.473)), url(../image/article-MJ.jpg);
+    background-size: cover; /*pour adapter l'image*/
+    background-position: center; /*pour positionner l'image*/
+    background-repeat: none; /*pour eviter la repetion d'image*/
+    text-align: center;
+}
+
+/****************************************FOOTER****************************************/
+footer{
+    display: flex;
+    justify-content: space-evenly; /*align vertical*/
+    align-items: center;
+    background-color: rgb(246, 236, 213);
+    padding: 50px;
+}
+footer h2{
+    font-size: 1.5em;
+    color: rgb(94, 47, 13);
+    text-decoration: underline;
+    margin: 10px 0;
+}
+ul li{
+    list-style: none;
+    padding: 10px;
+}
+ul li a{
+    color: rgb(94, 47, 13);
+    text-decoration: none;
+}
+ul li a:hover{
+    color: blueviolet;
+}
+footer .milieu p{
+    font-size: 1.2em;
+    color: rgb(94, 47, 13);
+    /* margin-top: 200px; */
+}
+/* .gauche, .droite{
+    width: 25%;
+}
+.milieu{
+    width: 45%;
+} */
