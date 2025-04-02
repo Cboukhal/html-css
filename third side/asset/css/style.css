@@ -63,6 +63,13 @@ nav ul li a:hover{
     color: rgb(145, 72, 20);
     font-weight: bold;
     font-size: 1.5em;
+    text-align: left;
+    margin: 0;
+}
+
+/****************************************RGPD****************************************/
+main{
+    background-color: black;
 }
 
 /******************************** BANIERE ********************************/
@@ -78,9 +85,11 @@ h1 span{
     font-size: 25px;
     color: bisque;
 }
-.baniere1 p{
+p{
     color: blanchedalmond;
     font-size: 1em;
+    text-align: center;
+    margin: 0 100px;
 }
 .btn{
     color: bisque;
@@ -147,3 +156,68 @@ footer .milieu p{
 .milieu{
     width: 45%;
 } */
+
+/****************************************PROPOS****************************************/
+
+.baniere2{
+    height: 70vh;/*prend 70% de l'écran*/
+    /*dregradé de couleur*/
+    /* background: linear-gradient(rgb(143, 126, 101),bisque);  */
+    /* background: url(../image/article-MJ.jpg); */
+    background: linear-gradient(rgba(255, 228, 196, 0.521), rgba(94, 47, 13, 0.473)), url(../image/fantasy-art-dragon-gray-photo-wallpaper.jpg);
+    background-size: cover; /*pour adapter l'image*/
+    background-position: center; /*pour positionner l'image*/
+    background-repeat: none; /*pour eviter la repetion d'image*/
+    text-align: center;
+}
+
+/****************************************BLOG****************************************/
+
+.baniere3{
+    height: 70vh;/*prend 70% de l'écran*/
+    /*dregradé de couleur*/
+    /* background: linear-gradient(rgb(143, 126, 101),bisque);  */
+    /* background: url(../image/article-MJ.jpg); */
+    background: linear-gradient(rgba(255, 228, 196, 0.521), rgba(94, 47, 13, 0.473)), url(../image/article-kit-initiation-cthulhu-1024x373.jpg);
+    background-size: cover; /*pour adapter l'image*/
+    background-position: center; /*pour positionner l'image*/
+    background-repeat: none; /*pour eviter la repetion d'image*/
+    text-align: center;
+}
+/****************************************SERVICE****************************************/
+.baniere4{
+    height: 70vh;/*prend 70% de l'écran*/
+    /*dregradé de couleur*/
+    /* background: linear-gradient(rgb(143, 126, 101),bisque);  */
+    /* background: url(../image/article-MJ.jpg); */
+    background: linear-gradient(rgba(255, 228, 196, 0.521), rgba(94, 47, 13, 0.473)), url(../image/OIP\ \(9\).jfif);
+    background-size: cover; /*pour adapter l'image*/
+    background-position: center; /*pour positionner l'image*/
+    background-repeat: none; /*pour eviter la repetion d'image*/
+    text-align: center;
+}
+/****************************************CONTACT****************************************/
+.baniere5{
+    height: 70vh;/*prend 70% de l'écran*/
+    /*dregradé de couleur*/
+    /* background: linear-gradient(rgb(143, 126, 101),bisque);  */
+    /* background: url(../image/article-MJ.jpg); */
+    background: linear-gradient(rgba(255, 228, 196, 0.521), rgba(94, 47, 13, 0.473)), url(../image/livre.jfif);
+    background-size: cover; /*pour adapter l'image*/
+    background-position: center; /*pour positionner l'image*/
+    background-repeat: none; /*pour eviter la repetion d'image*/
+    text-align: center;
+}
+
+/****************************************RGPD****************************************/
+.baniererpg{
+    height: 70vh;/*prend 70% de l'écran*/
+    /*dregradé de couleur*/
+    /* background: linear-gradient(rgb(143, 126, 101),bisque);  */
+    /* background: url(../image/article-MJ.jpg); */
+    background: linear-gradient(rgba(255, 228, 196, 0.521), rgba(94, 47, 13, 0.473));
+    background-size: cover; /*pour adapter l'image*/
+    background-position: center; /*pour positionner l'image*/
+    background-repeat: none; /*pour eviter la repetion d'image*/
+    text-align: center;
+}
