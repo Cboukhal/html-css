@@ -127,6 +127,7 @@ footer{
     align-items: center;
     background-color: rgb(246, 236, 213);
     padding: 50px;
+    border-top: 2px solid rgb(71, 50, 35);
 }
 footer h2{
     font-size: 1.5em;
@@ -157,7 +158,36 @@ footer .milieu p{
     width: 45%;
 } */
 
-/****************************************PROPOS****************************************/
+/****************************************INDEX QSN****************************************/
+
+main h2{
+    background-color: rgb(246, 236, 213);
+    color: rgb(94, 47, 13);
+    -webkit-text-stroke: 1px brown;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 3em;
+}
+h3{
+    color: rgb(246, 236, 213);
+    -webkit-text-stroke: 1px black;
+    font-size: 2.5em;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(94, 47, 13);
+    margin: 20px 0;
+}
+.qsn{
+    width: 100%;
+    text-align: center;
+}
+.qsn img{
+    width: 30%;
+    float: left;
+}
+
+/****************************************page a PROPOS****************************************/
 
 .baniere2{
     height: 70vh;/*prend 70% de l'écran*/
@@ -190,7 +220,7 @@ footer .milieu p{
     /*dregradé de couleur*/
     /* background: linear-gradient(rgb(143, 126, 101),bisque);  */
     /* background: url(../image/article-MJ.jpg); */
-    background: linear-gradient(rgba(255, 228, 196, 0.521), rgba(94, 47, 13, 0.473)), url(../image/OIP\ \(9\).jfif);
+    background: linear-gradient(rgba(255, 228, 196, 0.521), rgba(94, 47, 13, 0.473)), url(../image/header-conseils-maitre-du-jeu-jdr.jpg);
     background-size: cover; /*pour adapter l'image*/
     background-position: center; /*pour positionner l'image*/
     background-repeat: none; /*pour eviter la repetion d'image*/
@@ -202,7 +232,7 @@ footer .milieu p{
     /*dregradé de couleur*/
     /* background: linear-gradient(rgb(143, 126, 101),bisque);  */
     /* background: url(../image/article-MJ.jpg); */
-    background: linear-gradient(rgba(255, 228, 196, 0.521), rgba(94, 47, 13, 0.473)), url(../image/livre.jfif);
+    background: linear-gradient(rgba(255, 228, 196, 0.521), rgba(94, 47, 13, 0.473)), url(../image/jeu-de-role-debutants.webp);
     background-size: cover; /*pour adapter l'image*/
     background-position: center; /*pour positionner l'image*/
     background-repeat: none; /*pour eviter la repetion d'image*/
