@@ -181,10 +181,17 @@ h3{
 .qsn{
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.qsn aside{
+    display: block;
+    text-align: center;
+    width: 45%;
 }
 .qsn img{
-    width: 30%;
-    float: left;
+    width: 100%;
 }
 
 /****************************************page a PROPOS****************************************/
