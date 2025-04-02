@@ -138,6 +138,41 @@
         <section class="Contact">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20775.486407609125!2d2.4182783999999997!3d49.391206399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1743598908905!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <aside class="elementsup">
+                <form action="">
+                    <h3>Ecrivez-nous</h3>
+                    <p>
+                        *champ obligatoire.
+                    </p>
+                    <label for="Prenom" class="reserve">Penom:<span>*</span></label>
+                    <label for="Nom">Nom:<span>*</span></label>
+
+                    <br><input type="text" id="prenom" placeholder="Jean" required class="partage">            
+                    <input type="text"id="nom" placeholder="Boucher" required class="partage">
+
+                    <br><label for="Mail">Mail:<span>*</span></label>
+                    <input type="email"id="mail" placeholder="jean@hotmail.com" required>
+
+                    <label for="Adresse">Adresse:<span>*</span></label>
+                    <input type="text"id="adresse" placeholder="5 avenue de la paix" required>
+
+                    <br><label for="Cp" class="reserve">Code Postal:<span>*</span></label>
+                    <label for="Ville">Ville:<span>*</span></label>
+        
+                    <br><input type="number"id="cp" placeholder="75001" required class="partage">
+                    <input type="text"id="ville" placeholder="Paris" required class="partage">
+
+                    <br><label for="pays">Pays:</label>
+                    <input type="text"id="pays" placeholder="France" >
+
+                    <br><label for="message">Message</label>
+                    <textarea name="" id="message" placeholder="Ecrivez ici votre message" required></textarea>
+
+                    <br><label for="cgu">Accord<span>*</span>:</label>
+                    <br><input type="checkbox" id="cgu" required>
+
+                    <span class="cgu">En cochant cette case, vous acceptez nos <a href="./cgu.html">CGU</a></span>
+                    <br><input type="submit" value="Envoyer" class="btn" id="submit">
+                </form>
             </aside>
         </section>
     </main>

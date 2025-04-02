@@ -243,6 +243,47 @@ h4{
     margin: 0;
 }
 
+/****************************************index blog****************************************/
+.Contact{
+    position: relative;
+    /* text-align: center; */
+}
+.Contact iframe{
+    width: 70%;
+    height: 500px;
+    border: 0;
+    margin: 10px 50px;
+}
+.elementsup{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    /* text-align: right; */
+}
+.elementsup form{
+    background-color: rgb(246, 236, 213);
+    width: 50%;
+    margin-left: 40%;
+    padding: 50px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+}
+form input{
+    width: 98%;
+    height: 30px;
+}
+form textarea{
+    height: 80px;
+    width: 98%;
+}
+.partage{
+    width: 48%;
+}
+.reserve{
+    padding-right: 35%;
+
+}
+
 /****************************************page a PROPOS****************************************/
 
 .baniere2{
