@@ -132,8 +132,10 @@ nav ul li a:hover
 
 .bouton{
     position: absolute;
-    /* top: 70%;
-    left: 80%; */
+    /* top: 70%;*/
+    /* left: 45%;  */
+    margin-left: 50%;
+    transform: translate(-50%);
     background-color: rgb(220, 228, 231);
     color: rgb(9, 68, 116);
     font-size: 1 em;
@@ -150,7 +152,7 @@ nav ul li a:hover
     transform: translate(-50%);
 }
 
-/******************************* PROPOS *******************************/
+/******************************* PROPOS*******************************/
 
 #ME{
     display: flex;
@@ -180,7 +182,7 @@ h4{
 #Exp .bouton
 {
     width: 10%;
-    top: 50%;
+    /* top: 50%; */
 }
 
 /**********************************************Contact**********************************************/
@@ -234,8 +236,9 @@ input, textarea{
     float: left;
 }
 .cgu a{
-    color: rgb(88, 160, 85);
+    color: black;
     text-decoration: none;
+    text-decoration: underline;
 }
 .cgu a:hover{
     color: rgb(101, 93, 223);
