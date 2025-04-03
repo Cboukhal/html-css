@@ -156,6 +156,50 @@
             </aside>
         </section>
 
+        <h2>Contact</h2>
+        <section class="contact">
+            <form action="" class="formulaire">
+                <table>
+                    <tr>
+                        <td><label for="Prenom" class="reserve">Penom:<span>*</span></label></td>
+                        <td><label for="Nom">Nom:<span>*</span></label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="prenom" placeholder="Jean" required class="partage"> </td>
+                        <td><input type="text"id="nom" placeholder="Boucher" required class="partage"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Mail">Mail:<span>*</span></label></td>
+                        <td><input type="email"id="mail" placeholder="jean@hotmail.com" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Cp" class="reserve">Code Postal:<span>*</span></label></td>
+                        <td><label for="Ville">Ville:<span>*</span></label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"id="adresse" placeholder="5 avenue de la paix" required></td>
+                        <td><input type="text"id="ville" placeholder="Paris" required class="partage"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pays">Pays:</label></td>
+                        <td><input type="text"id="pays" placeholder="France" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Message</label></td>
+                        <td><textarea name="" id="message" placeholder="Ecrivez ici votre message" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cgu">Accord<span>*</span>:</label></td>
+                        <td><input type="checkbox" id="cgu" required>
+                            <span *class="cgu">En cochant cette case, vous acceptez nos <a href="">CGU</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Envoyer" class="btn" id="submit"></td>
+                    </tr>
+                </table>
+        </form>
+        </section>
+
     </main>
 
     <footer aria-label="pieds de page">
