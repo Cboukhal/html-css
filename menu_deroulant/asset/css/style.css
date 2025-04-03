@@ -156,8 +156,9 @@ footer p{
     font-size: 1.5em;
 }
 table{
-    margin-left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    /* margin-left: 50%;
+    transform: translateX(-50%); */
 }
 
 /****************************baniere1****************************/
