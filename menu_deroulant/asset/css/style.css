@@ -218,13 +218,30 @@ h3{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "aside1 aside2 aside3";
+    margin: 10px 50px;
+}
+.blog img{
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 5px 5px;
+    border-radius: 10px;
 }
 #art1{
     grid-area: aside1;
+
 }
 #art2{
     grid-area: aside2;
+
 }
 #art3{
     grid-area: aside3;
+
+}
+#art1,#art2,#art3{
+    padding: 10px;
+    border: 2px solid greenyellow;
+    border-radius: 30px;
+    margin-right:20px;
 }
