@@ -192,6 +192,9 @@ table{
     margin-right: 50px;
     text-align: center;
 }
+#apropos p{
+    text-align: left;
+}
 h2{
     background-color: cornflowerblue;
     color: darkgreen;
