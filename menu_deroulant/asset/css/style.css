@@ -80,8 +80,12 @@ header li a:hover{
     margin-left: -20px;
     position: absolute;
     text-align: center;
-    visibility: hidden; /*pour cacher mon sous menu*/
+    /*pour cacher mon sous menu*/
+    /* visibility: hidden;  */
+    /*pour cacher mon sous menu*/
+    display: none;
 }
 .menu li:hover .sousmenu{
-    visibility: visible;
+    /* visibility: visible; */
+    display: block;
 }
