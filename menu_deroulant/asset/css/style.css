@@ -11,7 +11,77 @@
 
 *{
     margin: 0;
-    padding: 0;
+    padding:0;
     /* ecoconception: consomme moins car les pixels sont éteins */
     /* background-color: black;  */
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(white, gold);
+    height: 80px;
+    border-bottom: 2px solid gold;
+}
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+}
+.logo img{
+    height: 60px;
+    width: 60px;
+    border-radius: 15px;
+    padding: 10px;
+}
+header a{
+    text-decoration: none;
+}
+.logo p{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: yellowgreen;
+    text-align: left;
+}
+nav{
+    width: 70%;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    position: relative;
+}
+header li{
+    padding: 20px;
+    width: 200px;
+    list-style: none;
+    text-align: center;
+}
+header li:hover{
+    background: linear-gradient(gold, white);
+    transition: 0.5s;
+}
+header li a{
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+header li a:hover{
+    color: burlywood;
+
+}
+.sousmenu{
+    background: linear-gradient(blue, white);
+    margin-top: 20px;
+    margin-left: -20px;
+    position: absolute;
+    text-align: center;
+    visibility: hidden; /*pour cacher mon sous menu*/
+}
+.menu li:hover .sousmenu{
+    visibility: visible;
 }
