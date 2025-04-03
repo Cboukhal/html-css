@@ -114,6 +114,7 @@ h1{
     padding: 10px;
     cursor: pointer;
     border-radius: 20px;
+    margin: 20px 0;;
 }
 .btn:hover{
     background-color: goldenrod;
@@ -139,6 +140,7 @@ footer h2{
     text-decoration: underline;
     padding: 10px;
     margin: 0;
+    background-color: transparent;
 }
 footer ul li{
     list-style: none;
@@ -170,4 +172,39 @@ table{
     background-position: center;
     background-repeat: none;
     text-align: center;
+}
+
+/****************************apropos index****************************/
+
+.apropos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "im aside";
+}
+#aps{
+    grid-area: im;
+    width: 40%;
+    margin-left: 50px;
+}
+#apropos{
+    grid-area: aside;
+    margin-right: 50px;
+    text-align: center;
+}
+h2{
+    background-color: cornflowerblue;
+    color: darkgreen;
+    font-style: 3em;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+}
+h3{
+    background-color: darkgreen;
+    color: cornflowerblue;
+    font-style: 1.8em;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 20px;
 }
