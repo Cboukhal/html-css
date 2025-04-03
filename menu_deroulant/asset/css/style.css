@@ -99,4 +99,23 @@ header li a:hover{
     background-size: cover;
     background-position: center;
     background-repeat: none;
+    text-align: center;
+}
+h1{
+    color: gold;
+    text-shadow: 1px 2px 2px whitesmoke;
+    font-size: 5em;
+    padding-top: 150px;
+}
+.btn{
+    background-color: whitesmoke;
+    color: gold;
+    font-size: 1em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: goldenrod;
+    color: white;
 }
