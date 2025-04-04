@@ -23,8 +23,12 @@ header{
     justify-content: space-evenly;
     align-items: center;
     height: 80px;
-    background-color: rgb(175, 195, 211);
+    background-color: rgb(153, 179, 199);
     border-bottom: 2px solid rgb(131, 195, 33);
+    /* pour fixer le menu  */
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 .logo{
     display: flex;
@@ -96,19 +100,19 @@ header li a:hover{
     background-size: cover;
     background-position: center;
     background-repeat: none;
-    height: 70vh;
+    height: 80vh;
     text-align: center;
 }
 h1{
     font-size: 5em;
     color: rgb(2, 72, 120);
-    text-shadow: 1px 2px 3px rgb(175, 195, 211);
+    text-shadow: 1px 2px 3px rgb(153, 179, 199);
     padding-top: 150px;
 }
 .btn{
     font-size: 1em;
     color: rgb(2, 72, 120);
-    background-color: rgb(175, 195, 211);
+    background-color: rgb(153, 179, 199);
     border: 2px solid rgb(131, 195, 33);
     padding: 20px;
     border-radius: 20px;
@@ -117,3 +121,100 @@ h1{
     background-color: rgb(2, 72, 120);
     color: rgb(131, 195, 33);
 }
+
+/***********************************Apropos***********************************/
+
+h2{
+    color: rgb(153, 179, 199);
+    background-color: rgb(2, 72, 120);
+    font-size: 3em;
+    text-shadow: 1px 2px 2px black;
+    padding: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+h3{
+    color: rgb(131, 195, 33);
+    text-decoration: underline;
+    font-size: 1.8em;
+    text-shadow: 1px 2px 2px rgb(2, 72, 120);
+    padding: 10px;
+}
+.apropos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.apropos .gauche{
+    width: 30%;
+}
+.gauche img{
+    width: 100%;
+}
+.apropos .droite{
+    width: 60%;
+    text-align: justify;
+}
+
+/***********************************Service***********************************/
+
+h4{
+    color: rgb(153, 179, 199);
+    background-color: rgb(2, 72, 120);
+    font-size: 1.5em;
+    text-shadow: 1px 2px 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.service{
+    width: 30%;
+    padding: 10px;
+    border: 2px solid rgb(153, 179, 199);
+    border-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+}
+.service img{
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 1px 2px 3px 3px rgb(131, 195, 33);
+    height: 300px;
+}
+
+/***********************************Service1***********************************/
+
+.service1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.service1 .gauche{
+    width: 40%;
+}
+.service1 .droite{
+    width: 50%;
+    text-align: center;
+}
+.service1 .gauche img{
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 1px 2px 3px 3px rgb(131, 195, 33);
+}
+.service1 ul li{
+    list-style: none;
+    font-weight: bold;
+}
+/***********************************Service2***********************************/
+
+
+
+/***********************************Service3***********************************/
+
+
