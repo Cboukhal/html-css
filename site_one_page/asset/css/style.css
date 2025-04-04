@@ -335,3 +335,89 @@ footer p{
     color: rgb(2, 72, 120);
     font-size: 2em;
 }
+
+/***********************************responsive***********************************/
+
+@media screen and (max-width: 500px){
+header{
+    display: block;
+    height: 70vh;
+    text-align: center;
+}
+.logo{
+    width: 100%;
+}
+nav{
+    width: 100%;
+}
+.menu{
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: static;
+}
+header li{
+    width: 100%;
+    margin: 0;
+}
+header li:hover{
+    background: linear-gradient(white);
+}
+.sousmenu{
+    position: relative;
+    text-align: center;
+    background-color: transparent;
+    margin: 0;
+}
+.sousmenu li{
+    width: 100%;
+    margin-left: -20px;
+}
+
+
+/***********************************baniere***********************************/
+
+#baniere{
+    padding-top: 60vh;
+}
+h1{
+    font-size: 2em;
+    padding-top: 100px;
+}
+.btn{
+    font-size: 12px;
+    padding: 5px;
+
+}
+
+
+/***********************************service***********************************/
+
+.services{
+    display: block;
+}
+.service{
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+
+/***********************************services***********************************/
+.service3{
+    display: block;
+}
+.service3 .gauche,
+.service3 .droite{
+    width: 90%;
+}
+
+/***********************************blog***********************************/
+
+.blog{
+    display: block;
+}
+.article{
+    width: 90%;
+    margin-bottom: 30px;
+}
+}
