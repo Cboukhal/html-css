@@ -273,10 +273,36 @@ h4{
 /***********************************BLOG***********************************/
 
 .blog{
-
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .article{
-    
+    width: 20%;
+    text-align: left;
+    padding: 20px;
+    border: 2px solid rgb(153, 179, 199);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.article img{
+    width: 20%;
+    float: left;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 2px 3px 3px rgb(2, 72, 120);
+    margin-right: 10px;
 }
 
 /***********************************CONTACT***********************************/
+
+iframe{
+    width: 100%;
+    height: 500px;
+    border: 0;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 2px 3px 3px rgb(2, 72, 120);
+}
+
+/***********************************FOOTER***********************************/
