@@ -306,3 +306,32 @@ iframe{
 }
 
 /***********************************FOOTER***********************************/
+
+footer{
+    padding: 50px;
+    margin-top: 50px;
+    background-color: rgb(153, 179, 199);
+}
+footer table{
+    width: 100%;
+    text-align: center;
+}
+footer table td{
+    width: 30%;
+}
+footer ul li{
+    list-style: none;
+}
+footer a{
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(2, 72, 120);
+}
+footer a:hover{
+    color: rgb(131, 195, 33);
+}
+footer p{
+    padding-top: 100px;
+    color: rgb(2, 72, 120);
+    font-size: 2em;
+}
