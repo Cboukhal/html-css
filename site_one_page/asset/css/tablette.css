@@ -1,4 +1,38 @@
 /* responsive pour ecran compris entre 500 et 900px */
+/* header{
+    display: block;
+} */
 header{
     display: block;
+    height: 45vh;
+    text-align: center;
+}
+.logo{
+    width: 100%;
+}
+nav{
+    width: 100%;
+}
+.menu{
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: static;
+}
+header li{
+    width: 100%;
+    margin: 0;
+}
+header li:hover{
+    background: linear-gradient(white);
+}
+.sousmenu{
+    position: relative;
+    text-align: center;
+    background-color: transparent;
+    margin: 0;
+}
+.sousmenu li{
+    width: 100%;
+    margin-left: -20px;
 }
