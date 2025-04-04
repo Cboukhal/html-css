@@ -213,8 +213,70 @@ h4{
 }
 /***********************************Service2***********************************/
 
-
+.service2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.service2 .gauche{
+    width: 50%;
+    text-align: center;
+}
+.service2 .droite{
+    width: 40%;
+}
+.service2 .droite img{
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 1px 2px 3px 3px rgb(131, 195, 33);
+}
+.service2 ul li{
+    list-style: none;
+    font-weight: bold;
+}
 
 /***********************************Service3***********************************/
 
 
+.service3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.service3 .gauche{
+    width: 40%;
+}
+.service3 .droite{
+    width: 50%;
+    text-align: center;
+}
+.service3 .gauche img{
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 1px 2px 3px 3px rgb(131, 195, 33);
+}
+.service3 ul li{
+    list-style: none;
+    font-weight: bold;
+}
+
+/***********************************img Service123***********************************/
+
+.service3 .gauche img,
+.service2 .droite img,
+.service1 .gauche img{
+    height: 25em;
+}
+
+/***********************************BLOG***********************************/
+
+.blog{
+
+}
+.article{
+    
+}
+
+/***********************************CONTACT***********************************/
