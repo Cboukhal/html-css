@@ -273,6 +273,7 @@ h4{
     text-align: center;
     margin-top: 10px;
     padding: 10px;
+    font-size: 2em;
 }
 .services p{
     margin: 10px 30px;
@@ -297,4 +298,85 @@ h4{
         opacity: 1;
     }
 }
+/***********************blog index***********************/
+/***********************partenaire index***********************/
+.partenaires{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.partenaires aside{
+    width: 30%;
+    text-align: center;
+}
+.a1 .forme{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.438);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+    animation: pulsion 1.5s infinite;
+}
+@keyframes pulsion {
+    from{
+        box-shadow: 0px 0px 0px 0px rgba(255, 0, 0, 0.438);
+    }
+    to{
+        box-shadow: 0px 0px 0px 18px rgba(255, 0, 0, 0.801);
+    }
+}
+.a2 .forme{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(100, 24, 100, 0.438);
+    animation: balade 4s alternate;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes balade {
+    0%{
+        background-color: rgba(100, 24, 100, 0.438);
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background-color: red;
+        left: 200px;
+        top: 0;
+    }
+    50%{
+        background-color: red;
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        background-color: BLUE;
+        left: 0px;
+        top: 200px;
+    }
+    100%{
+        background-color: BLUE;
+        left: 0px;
+        top: 0px;
+    }
+}
+.a3 .forme{
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 0 100px 150px 100px;
+        border-color: transparent transparent #FF4532 transparent;
+        animation: rotate 0.5s infinite;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/***********************CONTACT***********************/
 /***********************FOOTER***********************/
