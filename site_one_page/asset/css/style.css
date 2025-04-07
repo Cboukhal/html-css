@@ -373,7 +373,7 @@ footer p{
 @media screen and (max-width: 500px){
 header{
     display: block;
-    height: 70vh;
+    height: 50vh;
     text-align: center;
 }
 .logo{
