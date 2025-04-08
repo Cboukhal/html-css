@@ -23,32 +23,38 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+            <div class="container-fluid bg-info">
+              <a class="navbar-brand" href="#intro">Bootstrap</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#deux">Container</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#trois">Link</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+                    <a class="nav-link dropdown-toggle" href="#quatre" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu deroulant
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">menu 1</a></li>
+                      <li><a class="dropdown-item" href="#">menu 2</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">menu 3</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#trois">Positionnement</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#quatre">Grille</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -59,14 +65,14 @@
             </div>
           </nav>
     </header>
-    <h1>Bootstrap</h1>
+    <h1 id="intro">Bootstrap</h1>
         <h2>Introduction</h2>
             <p>Bootstrap est un framework CSS. Un framework est un ensemble de librairies regroupées dans un but précis et possédant des règles internes que doivent suivrent les utilisateurs.
                 <br>En d'autres termes et pour le dire plus simplement, Bootstrap est un ensemble de fichiers de CSS et Javascript en fontionnant ensemble et qu'on va pouvoir utiliser pour créer des designs complexes de manière relativement simple.
                 <br>L'intêret d'un framework c'est de nous permettre de réaliser plus de chose en codant moins.
             </p>
 
-        <h2>Comment utiliser Bootstrap ?</h2>
+        <h2 id="un">Comment utiliser Bootstrap ?</h2>
             <img src="./asset/image/bootstrap.jpg" alt="bootstrap">
             <p>Bootstrap est un ensemble de fichier CSS et Javascript, donc pour l'utiliser nous devons intégrer ces fichiers à notre projet ou tout simplement faire appel à ses fichiers via un CDN (Content delivry network).</p>
             <ul>
@@ -76,11 +82,76 @@
                 <span>Utiliser un CDN de bootstrap et le lier à notre projet comme n'importe quel autre CDN(réseau de distribution de contenu)</span>
             </ul>
 
-        <h2>Les containers Bootstrap</h2>
+        <h2 id="deux">Les containers Bootstrap</h2>
             <p>Bootstrap propose 2 types de containers responsives qui s'utilisent avec n'importe quel balise bloc.</p>
             <div class="container bg-success toto">container</div> <!--css height 100px-->
             <div class="container-fluid bg-primary ">container</div>
-            
+            <p>Le container de bootstrap possededes marges left et right tandis que le container-fluid occupe 100% de la largeur.</p>
+        
+        <h2 id="trois">Positionnement</h2>
+            <p>Bootstrap propose des classes qui nous permettent de faciliter le positionnement des éléments.</p>
+            <br>Voir exemple ci-dessous.
+            <div class="container bg-success p-3">
+                <div class="row bg-primary text-center">
+                    <div class="col bg-danger toto m-3">Colonne 1</div>
+                    <div class="col bg-danger toto m-3">Colonne 2</div>
+                    <div class="col bg-danger toto m-3">Colonne 3</div>
+                    <div class="col bg-danger toto m-3">Colonne 4</div>
+                    <div class="col bg-danger toto m-3">Colonne 5</div>
+                </div>
+            </div>
+
+        <h2 id="quatre">Options de grilles</h2>
+            <p>Bootstrap propose une grille de 12 colonnes. Son sytéme de grille peut s'adapter aux 6 points de rupture (breakpoint) par defaut et à tout autre point de rupture personalisé par les utilisateurs.
+            <br>Les 6 niveaux de breakpoints de Bootstrap sont les suivants:
+            </p>
+            <ul>
+                <li>Tres petits (xs)</li><span>écran inférieur à 576px</span>
+                <li>Petits (sm)</li><span>écran supérieur ou égal à 576px</span>
+                <li>Medium (m)</li><span>écran supérieur ou égal à 768px</span>
+                <li>Grand(lg)</li><span>écran supérieur ou égal à 992px</span>
+                <li>Trés grand(Xl)</li><span>écran supérieur ou égal à 1200px</span>
+                <li>Trés Trés grand(XXl)</li><span>écran supérieur ou égal à 1400px</span>
+            </ul>
+            <p>Voir exemple ci-dessous.</p>
+            <div class="container bg-success p-3">
+                <div class="row bg-primary text-center">
+                    <div class="col-xs-12 col-md-5 col-lg-2 bg-secondary toto m-3">Colonne 1</div>
+                    <div class="col-xs-12 col-md-5 col-lg-2 bg-secondary toto m-3">Colonne 2</div>
+                    <div class="col-xs-12 col-md-5 col-lg-2 bg-secondary toto m-3">Colonne 3</div>
+                    <div class="col-xs-12 col-md-5 col-lg-2 bg-secondary toto m-3">Colonne 4</div>
+                    <div class="col-xs-12 col-md-5 col-lg-2 bg-secondary toto m-3">Colonne 5</div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row m-3 p-3">
+                    <div class="card m-3 col-xs-11 col-md-5 col-lg-3" style="width: 18rem;">
+                        <img src="./asset/image/hello_there.jfif" class="card-img-top" alt="hello_there">
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Service 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="card m-3 col-xs-11 col-md-5 col-lg-3" style="width: 18rem;">
+                        <img src="./asset/image/hello_there.jfif" class="card-img-top" alt="hello_there">
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Service 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="card m-3 col-xs-11 col-md-5 col-lg-3" style="width: 18rem;">
+                        <img src="./asset/image/hello_there.jfif" class="card-img-top" alt="hello_there">
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Service 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </body>
         
 </html>
