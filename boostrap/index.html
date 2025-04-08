@@ -8,7 +8,7 @@
     <meta name="keywords" content="mot clé pour les autres utilisateurs">
     <meta name="author" content="Nom de l'autheur et date de la page">
     <title>Bootstrap</title>
-    <link rel="stylesheet" href="./asset/css/style.css">
+    
     <!-- link favicon  on oublie favicon on prend icon-->
     <link rel="icon" type="image/favicon" href="./asset/image/bootstrap-logo-shadow.png">
     <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
@@ -18,12 +18,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous" defer></script>
     <!-- n'aime pas les deux scripts en même temps -->
     <!-- <script src="./asset/Js/bootstrap.bundle.js" defer></script> -->
+    <link rel="stylesheet" href="./asset/css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid bg-info">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid tableau">
+            <div class="container-fluid tableau">
               <a class="navbar-brand" href="#intro">Bootstrap</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -65,6 +66,7 @@
             </div>
           </nav>
     </header>
+    <br><br>
     <h1 id="intro">Bootstrap</h1>
         <h2>Introduction</h2>
             <p>Bootstrap est un framework CSS. Un framework est un ensemble de librairies regroupées dans un but précis et possédant des règles internes que doivent suivrent les utilisateurs.
@@ -73,14 +75,15 @@
             </p>
 
         <h2 id="un">Comment utiliser Bootstrap ?</h2>
-            <img src="./asset/image/bootstrap.jpg" alt="bootstrap">
-            <p>Bootstrap est un ensemble de fichier CSS et Javascript, donc pour l'utiliser nous devons intégrer ces fichiers à notre projet ou tout simplement faire appel à ses fichiers via un CDN (Content delivry network).</p>
-            <ul>
-                <li>Premiére méthode</li>
-                <span>Télécharger Bootstrap depuis le site <a href="https://getbootstrap.com/">https://getbootstrap.com/</a> ensuite intégrer les fichiers CSS et Javascript à notre projet comme n'importe quel autre fichier CSS ou Js.</span>
-                <li>Seconde méthode</li>
-                <span>Utiliser un CDN de bootstrap et le lier à notre projet comme n'importe quel autre CDN(réseau de distribution de contenu)</span>
-            </ul>
+        <span class="double"><img src="./asset/image/bootstrap.jpg" alt="bootstrap">
+                <span id="double"><p>Bootstrap est un ensemble de fichier CSS et Javascript, donc pour l'utiliser nous devons intégrer ces fichiers à notre projet ou tout simplement faire appel à ses fichiers via un CDN (Content delivry network).</p>
+                <ul>
+                    <li>Premiére méthode</li>
+                    <span>Télécharger Bootstrap depuis le site <a href="https://getbootstrap.com/">https://getbootstrap.com/</a> ensuite intégrer les fichiers CSS et Javascript à notre projet comme n'importe quel autre fichier CSS ou Js.</span>
+                    <li>Seconde méthode</li>
+                    <span>Utiliser un CDN de bootstrap et le lier à notre projet comme n'importe quel autre CDN(réseau de distribution de contenu)</span>
+                </ul></span>
+            </span>
 
         <h2 id="deux">Les containers Bootstrap</h2>
             <p>Bootstrap propose 2 types de containers responsives qui s'utilisent avec n'importe quel balise bloc.</p>

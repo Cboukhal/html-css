@@ -21,10 +21,60 @@
 }
 
 /******************************HEADER******************************/
-header{
-    
+.tableau{
+    background-color: goldenrod;
+    padding: 10px;
+    margin-top: 10px;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    /* pour fixer le menu  */
+    position: fixed;
+    /* width: 100%; */
+    z-index: 100;
+    /* padding-bottom: 50px; */
+}
+h1{
+    margin-top: 50px;
+    font-size: 2.5em;
+    background-color: goldenrod;
+    text-align: center;
+}
+h2{
+    margin: 10px;
+    padding: 10px;
+    color: goldenrod;
+    background-color: crimson;
+    font-size: 2em;
+    text-align: center;
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+p{
+    font-size: 1em;
 }
 
 /******************************MAIN******************************/
+.double{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.double img{
+    width: 40%;
+    padding: 20px;
+}
+#double{
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+p{
+    text-align: center;
+}
 
 /******************************FOOTER******************************/
