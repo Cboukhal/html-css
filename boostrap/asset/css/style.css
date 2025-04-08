@@ -9,12 +9,12 @@
 
 /*https://flexboxfroggy.com/#fr*/
 
-*{
+/* *{
     margin: 0;
-    padding:0;
-    /* ecoconception: consomme moins car les pixels sont éteins */
-    /* background-color: black;  */
-}
+    padding:0; 
+    ecoconception: consomme moins car les pixels sont éteins
+    background-color: black; 
+} */
 
 /******************************HEADER******************************/
 
