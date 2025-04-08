@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quando&display=swap');
+
+@font-face {
+    font-family: "janat";
+    src: url(../fonts/lastica.ttf);
+}
+
+/*https://flexboxfroggy.com/#fr*/
+
+*{
+    margin: 0;
+    padding:0;
+    /* ecoconception: consomme moins car les pixels sont éteins */
+    /* background-color: black;  */
+}
+
+
+/***********************HEADER***********************/
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: radial-gradient(goldenrod, black);
+    border-bottom: 2px solid red;
+    height: 80px;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+}
+.logo img{
+    height: 60px;
+}
+.logo img:hover{
+    border: 2px solid goldenrod;
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.logo p{
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 2px 3px goldenrod;
+}
+.logo p:hover{
+    transform: scale(120%);
+    transition: 0.5s;
+}
+nav{
+    width: 80%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+}
+nav ul li{
+    width: 15%;
+    padding: 15px;
+    text-align: center;
+    list-style: none;
+}
+header a{
+    font-size: 1.8em;
+    color: goldenrod;
+    text-shadow: 1px 2px 3px black;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+header a:hover{
+color: black;
+}
+header li:hover{
+    background: radial-gradient(whitesmoke, goldenrod,);
+    box-shadow: inset 1px -4px 20px black;
+}
+header li a::after{
+    content: '';
+    height: 7px;
+    width: 0;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+header li a:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+/***********************MAIN***********************/
+
+/***********************index baniere***********************/
+.baniere{
+    height: 80vh;
+    background: radial-gradient(circle at 45% 25%, rgba(245, 245, 245, 0.63), rgba(218, 165, 32, 0.829),rgba(245, 245, 245, 0.274)), url(../image/hello_there.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+h1{
+    font-size: 5em;
+    color: black;
+    text-shadow: 1px 2px 3px goldenrod;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    animation: defilementverticale 2s ease-in-out;
+}
+@keyframes defilementverticale {
+    from{
+        transform: translateY(-500px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.btn{
+    font-size: 1em;
+    color: black;
+    background-color: goldenrod;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 50px;
+}
+.btn:hover{
+    color: goldenrod;
+    background-color: black;
+    border: 2px solid whitesmoke;
+    animation: janat 2s ease-out ;
+}
+@keyframes janat {
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-100px);
+    }
+    40%{
+        transform: translateX(100px);
+    }
+    60%{
+        transform: translateX(-50px);
+    }
+    80%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/***********************Apropos index***********************/
+.qsn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    /* padding: 20 0px; */
+}
+.qsn p{
+    color: goldenrod;
+    margin: 15px;
+    text-align: justify;
+    animation: defiledroite 2s ease-in-out;
+}
+@keyframes defiledroite {
+    from{
+        transform: translateX(900px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.qsn .gauche,
+.qsn .droite{
+    width: 45%;
+}
+.qsn .gauche img{
+    height: 25em;
+    animation: defilementhorizontal 2s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.qsn .droite{
+    width: 100%;
+}
+.qsn .btn{
+    margin-top: 15px;
+}
+h2{
+    font-size: 3.2em;
+    color: goldenrod;
+    text-shadow: 1px 2px 3px black;
+    padding: 10px;
+    margin: 30px 0;
+    animation: defilementhorizontal 2s ease-in-out;
+    text-align: center;
+}
+h3{
+    font-size: 2.5em;
+    color: whitesmoke;
+    text-shadow: 1px 2px 3px goldenrod;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 10px 0;
+    animation: zomavant 2s ease-in-out;
+    text-align: center;
+}
+@keyframes defilementhorizontal {
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes zomavant {
+    from{
+        transform: scale(200%);
+    }
+    to{
+        transform: scale(100%);
+    }
+}
+.qsn .gauche img:hover{
+    transform: scale(120%);
+    box-shadow: 1px 6px 4px 3px goldenrod;
+    transition: 0.5s;
+}
+
+/***********************Apropos index***********************/
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background: radial-gradient(circle at 45% 25%, rgba(245, 245, 245, 0.63), rgba(218, 165, 32, 0.829),rgba(245, 245, 245, 0.274));
+}
+.service1,
+.service2,
+.service3{
+    text-align: center;
+    width: 30%;
+    border-radius: 50px;
+    border: 2px solid goldenrod;
+
+}
+
+.services img{
+    width: 100%;
+    height: 25em;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+h4{
+    color: whitesmoke;
+    background-color: goldenrod;
+    text-shadow: 1px 2px 3px solid black;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 2em;
+}
+.services p{
+    margin: 10px 30px;
+}
+.services .btn{
+    margin-bottom: 20px;
+}
+.service1{
+    animation: defilementhorizontal 2s ease-in-out;
+}
+.service2{
+    animation: apparution 4s ease-in-out;
+}
+.service3{
+    animation: defiledroite 2s ease-in-out;
+}
+@keyframes apparution {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/***********************blog index***********************/
+
+.blog{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(50deg,rgb(86, 86, 201), rgb(148, 145, 145),rgb(110, 20, 20));
+}
+.blog article{
+    width: 30%;
+    text-align: center;
+}
+.blog img{
+    height: 20em;
+    margin: 15px;
+}
+.blog p{
+    font-size: 1em;
+    border: 2px solid black;
+    margin: 10px;
+}
+.article1 img{
+    animation:ouvert 3s ease-in-out;
+}
+@keyframes ouvert {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        width: 0;
+        opacity: 0;
+    }
+    50%{
+        width: 50%;
+        opacity: 0;
+    }
+    75%{
+        width: 75%;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/***********************partenaire index***********************/
+.partenaires{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.partenaires aside{
+    width: 30%;
+    text-align: center;
+}
+.a1 .forme{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.438);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+    animation: pulsion 1.5s infinite;
+}
+@keyframes pulsion {
+    from{
+        box-shadow: 0px 0px 0px 0px rgba(255, 0, 0, 0.438);
+    }
+    to{
+        box-shadow: 0px 0px 0px 18px rgba(255, 0, 0, 0.801);
+    }
+}
+.a2 .forme{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(100, 24, 100, 0.438);
+    animation: balade 4s alternate;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes balade {
+    0%{
+        background-color: rgba(100, 24, 100, 0.438);
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background-color: red;
+        left: 200px;
+        top: 0;
+    }
+    50%{
+        background-color: red;
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        background-color: BLUE;
+        left: 0px;
+        top: 200px;
+    }
+    100%{
+        background-color: BLUE;
+        left: 0px;
+        top: 0px;
+    }
+}
+.a3 .forme{
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 0 100px 150px 100px;
+        border-color: transparent transparent #FF4532 transparent;
+        animation: rotate 0.5s infinite;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/***********************CONTACT***********************/
+/***********************FOOTER***********************/
