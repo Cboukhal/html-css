@@ -319,6 +319,18 @@ h4{
     border: 2px solid black;
     margin: 10px;
 }
+.article1 img{
+    /* animation:ouvert 2s ease-in-out; */
+    mask-image: linear-gradient(50deg);
+}
+/* @keyframes ouvert {
+    from{
+        border-color: transparent transparent;
+    }
+    to{
+
+    }
+} */
 /***********************partenaire index***********************/
 .partenaires{
     display: flex;
