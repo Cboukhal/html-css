@@ -224,6 +224,103 @@ h4{
 }
 
 /******************************blog index******************************/
+.blog{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-height: 600px;
+}
+.blog article{
+    width: 25%;
+    padding: 20px;
+    max-height: 600px;
+    /* scroll vers la doite */
+    overflow: scroll;
+    overflow-x: hidden;
+    /* scroll vers le bas */
+    /* overflow-y: ; */
+    text-align: center;
+}
+.blog .img1{
+    background: linear-gradient(50deg, var(--couleur1) 50%, var(--couleur4) 50%);
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: right;
+    align-items: last baseline;
+    padding-right: 10px;
+    font-size: var(--sizeH3);
+    color: var(--couleur2);
+}
+.blog .img1:hover{
+    background: url(../image/OIP\ \(2\).jfif);
+    transition: 5s;
+}
+.blog .img1:hover::before{
+    content: "Autheur:Tristan";
+}
+.blog p{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+/*********************/
+.blog .img2{
+    background: linear-gradient(50deg, var(--couleur1) 50%, var(--couleur4) 50%);
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: right;
+    align-items: baseline;
+    padding-right: 10px;
+    font-size: var(--sizeH3);
+    color: var(--couleur2);
+}
+.blog .img2:hover{
+    background: url(../image/jedigris.jpg);
+    transition: 3s;
+}
+.blog .img2:hover::before{
+    content: "Autheur:Tristan";
+}
+/*********************/
+
+.blog .img3{
+    background: linear-gradient(50deg, var(--couleur1) 50%, var(--couleur4) 50%);
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: right;
+    align-items: baseline;
+    padding-right: 10px;
+    font-size: var(--sizeH3);
+    color: var(--couleur2);
+}
+.blog .img3:hover{
+    background: url(../image/article-MJ.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    transition: 0.5s;
+}
+.blog .img3:hover::before{
+    content: "Autheur:Tristan";
+}
+
+.parallax2{
+    height: 300px;
+    background: url(../image/logotrap.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    background-attachment: fixed;
+}
+
+/******************************partenaire index******************************/
+
+.partenaires{
+    
+}
 
 /******************************FOOTER******************************/
 
