@@ -319,9 +319,24 @@ h4{
 /******************************partenaire index******************************/
 
 .partenaires{
-    
-}
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
+}
+.partenaires aside{
+    width: 20%;
+    text-align: center;
+}
+.partenaires aside img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.partenaires aside p{
+    background-color: var(--couleur1);
+    color: var(--couleur2);
+}
 /******************************FOOTER******************************/
 
 footer{
