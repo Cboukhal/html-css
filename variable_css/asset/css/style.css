@@ -338,14 +338,25 @@ h4{
     color: var(--couleur2);
 }
 .des{
-    animation: roule 4s ease-out ;
+    animation: roule 1s ease-out ;
 }
-@keyframes identifier {
+.des:hover{
+    animation: roule 1s ease-out ;
+}
+@keyframes roule {
     from{
-        transform: rotate(360deg);
+        transform: rotate(0deg);
     }
     to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes roule2 {
+    from{
         transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
     }
 }
 /******************************FOOTER******************************/
