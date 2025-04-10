@@ -341,7 +341,7 @@ h4{
     animation: roule 1s ease-out ;
 }
 .des:hover{
-    animation: roule 1s ease-out ;
+    animation: roule2 1s ease-out ;
 }
 @keyframes roule {
     from{
