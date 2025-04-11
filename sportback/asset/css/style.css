@@ -16,7 +16,7 @@
     --couleursnd : #006548;
     --couleurtext : #384043;
     --couleuracc : #FFFFFF;
-    --fontwall:linear-gradient(120deg, var(--couleur4) 50%, var(--couleur1)50%);
+    --fontwall:linear-gradient(120deg, var(--couleuracc) 50%, var(--couleurpr)50%);
     /* déclarer une variable: déclarer une taille */
     --sizeH1: 5em;
     --sizeH2: 3em;
@@ -42,7 +42,67 @@
 
 /******************************HEADER******************************/
 
-
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    background: var(--fontwall);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: right;
+    /* width: 20%; */
+}
+nav{
+    width: 60%;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header li{
+    list-style: none;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+header li:hover{
+    background: linear-gradient(rgb(2, 72, 1205),rgb(131, 195, 33));
+}
+header li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(2, 72, 120);
+}
+header li a:hover{
+    color: rgb(131, 195, 33);
+}
+.sousmenu{
+    background-color: rgb(2, 72, 120);
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 10px;
+    display: none;
+}
+.sousmenu li a{
+    color: rgb(131, 195, 33);
+}
+.sousmenu li:first-child{
+    border-bottom: 2px solid goldenrod;
+}
+.sousmenu li:last-child{
+    border-top: 2px solid goldenrod;
+}
+.menu li:hover .sousmenu{
+    display: block;
+}
 /******************************MAIN******************************/
 
 /******************************baniere index******************************/
