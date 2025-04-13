@@ -16,7 +16,7 @@
     --couleursnd : #006548;
     --couleurtext : #384043;
     --couleuracc : #FFFFFF;
-    --fontwall:linear-gradient(120deg, var(--couleuracc) 50%, var(--couleurpr)50%);
+    --fontwall:linear-gradient(120deg, var(--couleuracc) 38%, var(--couleurpr)38%);
     /* déclarer une variable: déclarer une taille */
     --sizeH1: 5em;
     --sizeH2: 3em;
@@ -28,9 +28,9 @@
     --sizesnd: 400;
     --sizesacc: 500;
     /* variable: font-family */
-    --typopr : "Bebas Neue";
-    --typopr : "Roboto Slab";
-    --typopr : "Roboto";
+    --typoprBN : "Bebas Neue";
+    --typoprRS : "Roboto Slab";
+    --typoprR : "Roboto";
 }
 
 *{
@@ -39,6 +39,11 @@
     /* ecoconception: consomme moins car les pixels sont éteins
     background-color: black;  */
 }
+.btn{
+    background-color: var(--couleurpr);
+    color: var(--couleursnd);
+    font-weight: bold;
+}
 
 /******************************HEADER******************************/
 
@@ -46,71 +51,150 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 80px;
     background: var(--fontwall);
+    height: 100px;
     position: fixed;
     width: 100%;
     z-index: 100;
 }
 .logo{
     display: flex;
-    justify-content: space-evenly;
-    align-items: right;
-    /* width: 20%; */
+    justify-content: left;
+    align-items: flex-end;
+    width: 38%;
+}
+.logo img{
+    height: 124.8;
+    width: 56.72;
+    padding-top: 10px;
+}
+header a{
+    text-decoration: none;
 }
 nav{
-    width: 60%;
+    width: 38%;
 }
 .menu{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
     align-items: center;
-}
-header li{
-    list-style: none;
-    width: 150px;
-    padding: 20px;
-    text-align: center;
+    height: 80px;
     position: relative;
 }
+.menu li{
+    padding: 30px;
+}
+header li{
+    /* padding: 20px;
+    width: 200px; */
+    justify-content: left;
+    list-style: none;
+    text-align: left;
+}
 header li:hover{
-    background: linear-gradient(rgb(2, 72, 1205),rgb(131, 195, 33));
+    border-bottom: 2px solid var(--couleurtext);
 }
-header li a{
-    text-decoration: none;
-    font-size: 1.2em;
-    color: rgb(2, 72, 120);
+header li:after{
+    border-bottom: 2px solid var(--couleurtext);
 }
-header li a:hover{
-    color: rgb(131, 195, 33);
+header a{
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--typoprR);
+    /* text-transform: uppercase;La propriété text-transform définit la façon d'utiliser les lettres capitales pour le texte d'un élément. Cela permet que le texte soit écrit uniquement en majuscules, minuscules ou que chaque mot commence par une capitale. */
 }
 .sousmenu{
-    background-color: rgb(2, 72, 120);
-    position: absolute;
+    background-color: #FFFFFF;
+    margin-top: 20px;
     margin-left: -20px;
-    margin-top: 10px;
+    position: absolute;
+    text-align: center;
     display: none;
 }
-.sousmenu li a{
-    color: rgb(131, 195, 33);
-}
-.sousmenu li:first-child{
-    border-bottom: 2px solid goldenrod;
-}
-.sousmenu li:last-child{
-    border-top: 2px solid goldenrod;
-}
 .menu li:hover .sousmenu{
+    /* background-color: #FFC844; */
     display: block;
 }
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 5%;
+    padding: 10px;
+}
+.social li{
+    padding: 0%;
+    margin: 0 5px;
+}
+.social li i{
+        display: inline-block;
+        background-color: black;
+        color: #FFC844;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 15px;
+} 
 /******************************MAIN******************************/
 
 /******************************baniere index******************************/
 
+.baniere {
+    height: 70vh;
+    background: url(../image/wow_warwithin.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center;     
+    align-items: flex-end;       /* place en bas */
+    padding-bottom: 40px;        
+    text-align: center;
+}
+h1 {
+    color: var(--couleuracc);
+    font-size: 40px;
+    font-weight: 400;
+    width: 50%; /* ou 50% si tu veux plus étroit */
+    margin: 0;
+    font-family: var(--typoprBN);
+}
+#btn{
+    background-color: #FFC844;
+    font-weight: 500;
+    border-radius: 100px;
+    color: var(--couleurtext);
+    border-color: #FFC844;
+    border-width: 0;
+    width: 10%;
+}
 
-/******************************apropos index******************************/
-
-
+/******************************blog index******************************/
+.blog{
+    height: 55vh; /* 80% de la hauteur de l’écran */
+    display: flex;
+    flex-direction: column; /*La propriété flex-direction définit la façon dont les éléments flexibles sont placés dans un conteneur flexible : elle définit l'axe principal et la direction des éléments (normale ou inversée). */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+}
+.blog h2{
+    font-family: var(--typoprBN);
+    font-weight: 500;
+    color: var(--couleursnd);
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.blog p{
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #333;
+}
+.blog .btn{
+    margin-top: 15px;
+}
 /******************************parallax index******************************/
 
 /******************************blog index******************************/
