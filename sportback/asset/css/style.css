@@ -195,8 +195,25 @@ h1 {
 .blog .btn{
     margin-top: 15px;
 }
-/******************************parallax index******************************/
+/******************************partenaire index******************************/
 
+.partenaires{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-position: center;
+}
+/* .partenaire{
+    width: 28%;
+    text-align: center;
+    border-radius: 40px;
+} */
+/* .partenaires img{
+    border-radius: 40px;
+    height: 200px;
+    width: 50%;
+    opacity: 0.5;
+} */
 /******************************blog index******************************/
 
 /******************************partenaire index******************************/
