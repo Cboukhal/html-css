@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quando&display=swap');
+
+@font-face {
+    font-family: "janat";
+    src: url(../fonts/lastica.ttf);
+}
+
+/*https://flexboxfroggy.com/#fr*/
+
+/* *{
+    margin: 0;
+    padding:0; 
+    ecoconception: consomme moins car les pixels sont éteins
+    background-color: black; 
+} */
+
+.toto{
+    height: 100px;
+}
+
+/******************************HEADER******************************/
+.tableau{
+    background-color: goldenrod;
+    padding: 10px;
+    margin-top: 10px;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    /* pour fixer le menu  */
+    position: fixed;
+    /* width: 100%; */
+    z-index: 100;
+    /* padding-bottom: 50px; */
+}
+h1{
+    margin-top: 50px;
+    font-size: 2.5em;
+    background-color: goldenrod;
+    text-align: center;
+}
+h2{
+    margin: 10px;
+    padding: 10px;
+    color: goldenrod;
+    background-color: crimson;
+    font-size: 2em;
+    text-align: center;
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+p{
+    font-size: 1em;
+}
+
+/******************************MAIN******************************/
+.double{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.double img{
+    width: 40%;
+    padding: 20px;
+}
+#double{
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+p{
+    text-align: center;
+}
+
+/******************************FOOTER******************************/
