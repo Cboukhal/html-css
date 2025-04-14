@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,43 @@
     <!-- <script src="./asset/Js/bootstrap.bundle.js" defer></script> -->
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
+
 <body>
-    
+    <header aria-label="en-tête du site">
+        <!-- L'élément HTML <div> (ou division) est le conteneur générique du contenu du flux. Il n'a aucun effet sur le contenu ou la mise en page tant qu'il n'est pas mis en forme d'une manière quelconque à l'aide de CSS. -->
+        <div class="logo">
+            <a href=""><img src="./asset/image/oiseau.webp" alt="logo oiseau"></a>
+            <p>Recapitulatif</p>
+        </div>
+        <!-- L'élément HTML <nav> représente une section d'une page ayant des liens vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une section destinée à la navigation dans un document (avec des menus, des tables des matières, des index, etc.). -->
+        <nav>
+            <ul class="menu">
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./service.html">Service</a><span>&#9207</span>
+                    <ul class="sousmenu">
+                        <li><a href="./service1.html">Service1</a></li>
+                        <li><a href="./service2.html">Service2</a></li>
+                        <li><a href="./service3.html">Service3</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./partenaire.html">Partenaire</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="baniere" aria-label="">
+            <h1>Accueil</h1>
+            <p>Juste une phrase en dessous du H1</p>
+            <a href="./contact.html"><button class="btn">Contact</button></a>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
+
 </html>

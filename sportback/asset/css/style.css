@@ -98,7 +98,7 @@ header li{
 header li:hover{
     border-bottom: 2px solid var(--couleurtext);
 }
-header li:after{
+header li::after{
     border-bottom: 2px solid var(--couleurtext);
 }
 header a{
