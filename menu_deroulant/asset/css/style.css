@@ -250,7 +250,7 @@ h3{
 
 .boutique{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1f;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "b1 b2 b3 b4"
                         "b5 b6 b7 b8"
