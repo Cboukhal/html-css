@@ -302,37 +302,41 @@ h1 {
 
 /******************************partenaire index******************************/
 /******************************contact index******************************/
-
 .contact{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    text-align: center;
+    background-color: #DDDDDD;
+    width: 100%;
     flex-direction: column;
-    background-color:#DDDDDD;
-    padding: 47px 0;
+    padding: 15px 0;
+    height: 25vh;
+}
+form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact input,
+.contact textarea {
     width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
-.contact table{
-    border: 0;
-    width: 80%;
-    height: 500px;
-    padding: 50px;
-    margin-left: 50%;
-    transform: translate(-50%);
-    font-size: 1.5em;
-}
-.contact td{
-    padding: 0 15px;
-}
-tr td input{
-    width: 100%;
-}
-tr td textarea{
-    width: 100%;
-    height: 100px;
+.contact textarea {
     resize: none;
+    height: 100px;
 }
+
+.contact table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 /******************************FOOTER******************************/
 
 footer{
