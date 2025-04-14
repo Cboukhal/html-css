@@ -137,7 +137,7 @@ header li a{
 /******************************baniere index******************************/
 
 .baniere{
-    background: url(../image/chinese-dragon-fantasy-background-asian-and-eastern-mythological-creature-illustration-for-chinese-new-year-generative-ai-photo.jpg);
+    background: radial-gradient(closest-side at 50% 60%, rgba(0, 0, 0, 0.911) 50%, rgba(160, 160, 160, 0.836)50%), url(../image/chinese-dragon-fantasy-background-asian-and-eastern-mythological-creature-illustration-for-chinese-new-year-generative-ai-photo.jpg);
     background-position: center;
     background-repeat: none;
     background-size: cover;
@@ -169,7 +169,7 @@ h1{
     background-position: center;
     background-repeat: none;
     background-size: cover;
-    animation: cercle 2s ease-in-out;
+    animation: cercle 1s ease-in-out;
 }
 @keyframes cercle{
     0%{

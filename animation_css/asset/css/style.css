@@ -320,7 +320,7 @@ h4{
     margin: 10px;
 }
 .article1 img{
-    animation:ouvert 3s ease-in-out;
+    animation:ouvert 4s ease-in-out;
 }
 @keyframes ouvert {
     0%{
