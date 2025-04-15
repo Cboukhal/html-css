@@ -14,6 +14,8 @@
     /*couleur*/
     --couleurpr : #3170C2,;
     --couleursnd : #24229B;
+    --couleurtext : black;
+    --couleurwall : linear-gradient(120deg,white,#3170C2);
     /*font-family */
     --typoL : "lastica";
     --typoA : "arial";
@@ -41,38 +43,26 @@
 /******************************HEADER******************************/
 
 header{
-    /* La propriété display définit le type d'affichage utilisée pour le rendu d'un élément (de bloc ou en ligne) et la disposition utilisée pour ses éléments fils : grille ou boîtes flexibles.Le type d'affichage donné par display possède deux composantes : le type d'affichage extérieur qui définit comment la boîte participe au flux et le type d'affichage intérieur qui définit l'organisation des éléments enfants. */
-    /* La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur. */
     display: flex;
-    /* La propriété CSS justify-content indique la façon dont l'espace doit être réparti entre et autour des éléments selon l'axe principal d'un conteneur flexible ou selon l'axe en ligne lorsque le conteneur est une grille. */
-    /* Les éléments sont espacés équitablement. L'espace utilisé entre chaque élément, entre le bord du conteneur et le premier élément, et entre le dernier élément et le bord du conteneur est le même. */
     justify-content: space-evenly;
-    align-items: center;
-    background: linear-gradient(120deg,rgb(160, 160, 160) 38%,rgb(78, 78, 151) 38%);
+    align-items: flex-start;
+    background: var(--couleurwall);
     width: 100%;
-    position: fixed;
-    z-index: 100;
+    padding: 5px;
 }
 .logo{
     display: flex;
-    justify-content: left;
+    justify-content:flex-start;
     align-items: center;
-    /* La propriété flex-direction définit la façon dont les éléments flexibles sont placés dans un conteneur flexible : elle définit l'axe principal et la direction des éléments (normale ou inversée). */
-    flex-direction: column;
     width: 20%;
 }
 .logo img{
-    height: 60px;
-    width: 60px;
-    border-radius: 45%;
-}
-.logo p{
-    font-size: var(--sizep);
-    text-shadow: 1px 2px 3px var(--couleuracc);
-    font-weight: bold;
+    height: 20em;
+    width: 20em; 
+    /* border-radius: 45%; */
 }
 nav{
-    width: 60%;
+    width: 80%;
 }
 .menu{
     display: flex;
@@ -81,52 +71,39 @@ nav{
 }
 header li{
     list-style: none;
-    text-align: center;
-    position: relative;
-    padding: 10px;
-    width: 10%;
-}
-header li:hover{
-    border-bottom: 1px solid black;
+    padding: 15px;
+    width: 15%;
+    width: 100%;
 }
 header li a{
     text-decoration: none;
-    font-size: var(--sizeancre);
+    font-family: var(--typoA);
     color: var(--couleurtext);
-    text-shadow: 1px 2px 3px var(--couleuracc);
+    font-size: 3em;
+}
+header li span{
+    font-size: 3em;
 }
 .sousmenu{
-    background-color: var(--couleuracc);
+    background-color: var(--couleurwall);
     position: absolute;
-    margin-left: -35px;
+    /* margin-left: -35px; */
     /* transform: translateX(-50%);
     margin-left: 50%; */
-    margin-top: 10px;
+    margin-top: 15px;
     display: none;
 }
 .sousmenu a,
 .sousmenu li {
     /*padding-right: 35px; */
-    transform: translateX(-25%);
+    transform: translateX(-10%);
     /* margin-left: 50%;  */
     width: 100%;
-}
-.sousmenu li:first-child{
-    border-bottom: 2px solid goldenrod;
-}
-.sousmenu li:last-child{
-    border-top: 2px solid goldenrod;
-    border-bottom: 2px solid goldenrod;
 }
 .menu li:hover .sousmenu{
     display: block;
 }
-.sousmenu li a:hover {
-    border-bottom: 1px solid black;
-}
-.sousmenu li:hover {
-    border-bottom: none;
-}
+
 
 /******************************MAIN******************************/
 
@@ -147,3 +124,51 @@ header li a{
 /******************************contact index******************************/
 
 /******************************FOOTER******************************/
+
+footer{
+    /* height: 80px; */
+    background: var(--couleurwall);
+    margin-top: 25px;
+    padding: 50px;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+footer h3{
+    font-size: 2em;
+    color: var(--couleur3);
+    text-decoration: none;
+    /* margin-bottom: 20px; */
+    /* background-color: transparent; */
+    text-align: center;
+}
+footer li{
+    list-style: none;
+    font-size: 2em;
+    padding: 10px;
+}
+.gauche{
+    margin-left: 35px;
+    text-align: left;
+}
+h3 .gauche{
+    margin-left: 35px;
+}
+h3{
+    font-weight: bold;
+}
+table .droite{
+    margin-left: 50px;
+}
+footer a{
+    color: var(--couleurtext);
+    text-shadow: 1px 2px 3px var(--couleur2);
+    text-decoration: none;
+}
+footer p{
+    color: black;
+    font-weight: bold;
+    margin-top: 30em;
+    /* padding-top: 200px; */
+}
