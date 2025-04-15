@@ -12,7 +12,7 @@
 /* root est la racine de notre html */
 :root{
     /*couleur*/
-    --couleurpr : #3170C2,;
+    --couleurpr : #3170C2;
     --couleursnd : #24229B;
     --couleurtext : black;
     --couleurwall : linear-gradient(120deg,white,#3170C2);
@@ -24,21 +24,33 @@
     margin: 0;
     padding: 0;
     font-family: var(--typoA);
-    color: var(--couleurpr);
 }
 .btn{
     color: white;
     background-color: var(--couleursnd);
     margin: 20px 0;
-    padding: 20px;
-    border-radius: 30px;
+    padding: 35px;
+    border-radius: 50px;
     text-decoration: none;
-    
+    font-family: var(--typoL);
+    font-size: 1.5em;
 }
 .btn:hover{
     color: var(--couleursnd);
     background-color: white;
     border: 1px solid var(--couleursnd);
+    cursor: pointer;
+}
+h2{
+    font-family: var(--typoL);
+    font-size: 2.5em;
+    background-color: var(--couleursnd);
+    color: white;
+    text-align: center;
+}
+h4{
+    font-family: var(--typoL);
+    margin: 15px 0;
 }
 /******************************HEADER******************************/
 
@@ -57,8 +69,8 @@ header{
     width: 20%;
 }
 .logo img{
-    height: 20em;
-    width: 20em; 
+    height: 10em;
+    width: 15em; 
     /* border-radius: 45%; */
 }
 nav{
@@ -79,26 +91,26 @@ header li a{
     text-decoration: none;
     font-family: var(--typoA);
     color: var(--couleurtext);
-    font-size: 3em;
+    font-size: 2em;
 }
 header li span{
     font-size: 3em;
 }
 .sousmenu{
-    background-color: var(--couleurwall);
     position: absolute;
-    /* margin-left: -35px; */
-    /* transform: translateX(-50%);
-    margin-left: 50%; */
     margin-top: 15px;
     display: none;
 }
 .sousmenu a,
 .sousmenu li {
-    /*padding-right: 35px; */
     transform: translateX(-10%);
-    /* margin-left: 50%;  */
     width: 100%;
+}
+.sousmenu li{
+    background: var(--couleurwall);
+}
+.sousmenu li:last-child{
+    border-top: 1px solid grey;
 }
 .menu li:hover .sousmenu{
     display: block;
@@ -109,24 +121,387 @@ header li span{
 
 /******************************baniere index******************************/
 
-/******************************a propos index******************************/
+.baniere1{
+    background: url(../image/evaluation/Images-20250415T064532Z-001/Images/H4C\ LAST2\ REFLET.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    height: 80vh;
+    text-align: center;
+}
+.baniere1 .btn{
+    margin-top: 25em;
+}
+.baniere2{
+    background: url(../image/evaluation/Images-20250415T064532Z-001/Images/AFFICHES\ ki\ sommes\ nous.jpg);
+}
+.baniereapropos{
+    background: url(../image/evaluation/Images-20250415T064532Z-001/Images/AFFICHES\ ki\ sommes\ nous.jpg);
+}
+.banierecontact{
+    background: url(../image/evaluation/Images-20250415T064532Z-001/Images/AFFICHES\ contact.jpg);
+}
+.baniereparrainage{
+    background: url(../image/evaluation/Images-20250415T064532Z-001/Images/AFFICHES\ parrainage.jpg);
+}
+.baniereportage{
+    background: url(../image/evaluation/Images-20250415T064532Z-001/Images/AFFICHES\ offres.jpg);
+}
+.baniereservices{
+    background: url(../image/evaluation/Images-20250415T064532Z-001/Images/Affiches\ offres\ et\ services.jpg);
+}
+.baniereexpertise{
+    background: url(../image/evaluation/Images-20250415T064532Z-001/Images/AFFICHES\ domaines\ d_expertises.jpg);
+}
+.baniereapropos,
+.baniere2,
+.banierecontact,
+.baniereparrainage,
+.baniereportage,
+.baniereexpertise,
+.baniereservices{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+}
+h1{
+    font-size: 5em;
+    color: white;
+    font-family: var(--typoL);
+    margin: 0;
+    padding: 0;
+}
 
-/******************************parallax index******************************/
+/******************************description index******************************/
 
-/******************************service index******************************/
+.presentation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    background-position: center;
+    flex-direction: column;
+    font-size: 2em;
+}
+ .text{
+    text-align: center;
+    width: 90%;
+}
+#img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.img{
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    /* padding: 40px 20px; */
+    font-size: 2em;
+}
+.img img{
+    height: 40%;
+    width: 40%;
+}
 
-/******************************blog index******************************/
 
-/******************************parallax2 index******************************/
+/******************************qsn index******************************/
 
-/******************************partenaire index******************************/
+.qsn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--couleursnd);
+    width: 100%;
+    flex-direction: column;
+    padding: 5em;
+}
+.qsn h3{
+    color: var(--couleurpr);
+    font-family: var(--typoL);
+    margin: 25px 0;
+}
+.qsnp{
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 80%;
+}
+/******************************portage******************************/
+.textportage{
+    color: gray;
+}
+.textportage img{
+    width: 100%;
+}
 
-/******************************contact index******************************/
+/******************************a propos******************************/
+
+.groupe1 h4,
+.groupe2 h4,
+.groupe3 h4,
+.groupe4 h4,
+.groupe5 h4{
+    font-family: var(--typoL);
+}
+.groupe1 h4,
+.groupe3 h4,
+.groupe5 h4{
+    color: white;
+}
+.groupe2 h4,
+.groupe4 h4{
+    color: var(--couleursnd);
+}
+.groupe1,
+.groupe3{
+    background-color: var(--couleursnd);
+}
+.groupe5{
+    background-color: var(--couleurpr);
+}
+.groupe4{
+    width: 100%;
+    
+}
+.groupe4 img{
+    
+    width: 15%;
+}
+/******************************service******************************/
+
+.textservices img{
+    width: 10em;
+    height: 10em;
+}
+
+.tcontrat{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+} 
+.tcontrat .gauche,
+.tcontrat .droite{
+    width: 45%;
+}
+.droite{
+        flex-direction: column;
+        text-align: justify;
+
+}
+.gauche img{
+    height: 25em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/******************************domaine******************************/
+
+.domaine{
+    /* display: flex; */
+    /* justify-content: space-evenly;
+    align-items: center;
+    text-align: center; */
+
+    width: 100%;
+}
+.domaine aside{
+    display: flex;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+.domaine li{
+    color: white;
+    margin: 15px;
+    text-align: justify;
+    
+}
+.domaine1 .gauche,
+.domaine1 .droite{
+    width: 45%;
+}
+.domaine img{
+    width: 100%;
+    height: 25em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* .domaine1 .droite,
+.domaine1 .gauche{
+    width: 100%;
+} */
+h4{
+
+    color: var(--couleurpr);
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+.domaine1,
+.domaine2,
+.domaine3,
+.domaine4,
+.domaine5,
+.domaine6,
+.domaine7,
+.domaine8,
+
+.domaine1,
+.domaine3,
+.domaine5,
+.domaine7{
+    background-color: var(--couleursnd);
+}
+.domaine2,
+.domaine4,
+.domaine6,
+.domaine8{
+    background-color: var(--couleurpr);
+}
+.domaine1 h4,
+.domaine3 h4,
+.domaine5 h4,
+.domaine7 h4{
+    color: black;
+}
+/******************************recherche index******************************/
+
+.recherche{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.recherche aside{
+    width: 20% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+.recherche div{
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    padding: 5px;
+}
+.recherche p{
+    width: 90%;
+    font-size: 1.2em;
+    color: grey;
+    text-align: center;
+}
+.flipbackground:hover{
+    background: url(../image/evaluation/Images-20250415T064532Z-001/Images/H4C\ LOGO.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    transition: 1s;
+}
+
+.fb1{
+    background: url(../image/evaluation/Images-20250415T064532Z-001/Images/ICONES\ DEVELOPPEUR.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    transition: 1s;
+}
+.fb2{
+    background: url(../image/evaluation/Images-20250415T064532Z-001/Images/ICONES\ TESTEUR.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    transition: 1s;
+}
+.fb3{
+    background: url(../image/evaluation/Images-20250415T064532Z-001/Images/ICONES\ LOGICIEL.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    transition: 1s;
+}
+.fb4{
+    background: url(../image/evaluation/Images-20250415T064532Z-001/Images/ICONES\ RESEAUX.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    transition: 1s;
+}
+#btnpost{
+   margin-left: 50%;
+   transform: translate(-50%);
+}
+
+/******************************contact/parrainage ******************************/
+
+.maps iframe{
+    width: 100%;
+    height: 35em;
+}
+.formulaire{
+    /* display: flex; */
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+table{
+    border: 0;
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    padding: 50px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 1.5em;
+}
+.contact td{
+    padding: 0 15px;
+}
+tr td input{
+    width: 90%;
+    height: 2.5em;
+    margin: 5px 0;
+}
+tr td textarea{
+    width: 90%;
+    height: 15em;
+    resize: none;
+}
+tr td input,
+tr td textarea {
+    box-sizing: border-box;
+    border: 1px solid grey;
+    padding: 8px;
+}
+table .btn{
+    margin-left: 80%;
+}
+table label span{
+    color: red;
+}
+.parrainer{
+    padding: 15px;
+    background-color: grey;
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
 
 /******************************FOOTER******************************/
 
 footer{
-    /* height: 80px; */
     background: var(--couleurwall);
     margin-top: 25px;
     padding: 50px;
@@ -139,8 +514,6 @@ footer h3{
     font-size: 2em;
     color: var(--couleur3);
     text-decoration: none;
-    /* margin-bottom: 20px; */
-    /* background-color: transparent; */
     text-align: center;
 }
 footer li{
@@ -170,5 +543,35 @@ footer p{
     color: black;
     font-weight: bold;
     margin-top: 30em;
-    /* padding-top: 200px; */
+}
+
+/******************************RGPD******************************/
+.baniereRGPD{
+    height: 80vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+}
+.baniereRGPD h1{
+    color: black;
+}
+.textRGPD,
+.textapropos,
+.textparrainage,
+.group,
+.textservices,
+.textdomaine,
+.textportage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    font-size: 2em;
+    width: 80%;
+    margin-left: 5px;
+    transform: translateX(15%);
 }
