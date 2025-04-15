@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quando&display=swap');
+
+@font-face {
+    font-family: "janat";
+    src: url(../fonts/lastica.ttf);
+}
+
+/*https://flexboxfroggy.com/#fr*/
+
+/* root est la racine de notre html */
+:root{
+    /*couleur*/
+    --couleurpr : #3170C2,;
+    --couleursnd : #24229B;
+    /*font-family */
+    --typoL : "lastica";
+    --typoA : "arial";
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--typoA);
+    color: var(--couleurpr);
+}
+.btn{
+    color: white;
+    background-color: var(--couleursnd);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    
+}
+.btn:hover{
+    color: var(--couleursnd);
+    background-color: white;
+    border: 1px solid var(--couleursnd);
+}
+/******************************HEADER******************************/
+
+/******************************MAIN******************************/
+
+/******************************baniere index******************************/
+
+/******************************a propos index******************************/
+
+/******************************parallax index******************************/
+
+/******************************service index******************************/
+
+/******************************blog index******************************/
+
+/******************************parallax2 index******************************/
+
+/******************************partenaire index******************************/
+
+/******************************contact index******************************/
+
+/******************************FOOTER******************************/
